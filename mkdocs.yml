@@ -23,6 +23,13 @@ pages:
       - Creating a MongoDB database: 'getting-started/installation/mongodb.md'
       - Creating a GitHub application: 'getting-started/installation/github.md'
       - Configuration: 'getting-started/installation/configuration.md'
+      - Setting up the server: 'getting-started/installation/setting-up.md'
+    - Using it:
+      - Generating JS payloads: 'getting-started/using/payload-generator.md'
+      - Hooking browsers: 'getting-started/using/inject.md'
+      - Password extractor: 'getting-started/using/passwords.md'
+      - Keylogger: 'getting-started/using/keylogger.md'
+      - Project configuration: 'getting-started/using/project-config.md'
 
 # Extensions
 markdown_extensions:
