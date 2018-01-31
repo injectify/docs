@@ -3,8 +3,11 @@ site_name: Injectify Documentation
 # Repository
 repo_name: 'samdenty99/injectify'
 repo_url: 'https://github.com/samdenty99/injectify'
+edit_uri: 'https://github.com/injectify/docs/edit/master/docs/'
 
-# Copyright
+# Meta
+site_description: 'Perform advanced MiTM attacks on websites with ease.'
+site_author: 'samdd'
 copyright: 'Copyright &copy; 2018 Sam Denty'
 
 # Configuration
@@ -44,6 +47,8 @@ pages:
       - Project API: 'usage/project-config/api.md'
   - Demos:
       - Interface demos: 'demos/interface.md'
+  - Chat:
+    - Discord: 'chat.md'
 
   # Extensions
 markdown_extensions:
@@ -53,11 +58,22 @@ markdown_extensions:
   - footnotes
   - codehilite
   - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji
-  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 # Resources
 extra_javascript:
   - 'assets/js/crate.js'

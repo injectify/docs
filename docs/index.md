@@ -8,4 +8,5 @@ Injectify is a web based MiTM tool, similiar to [BeEF](http://beefproject.com/) 
 * :keyboard: Records keystrokes and logs them to a database.
 * :closed_lock_with_key: Extract and log [saved passwords](https://twitter.com/thesamdd/status/947251299262836741) from the browser.
 
-## What does it do good?
+## Test it out
+[https://injectify.samdd.me](https://injectify.samdd.me)

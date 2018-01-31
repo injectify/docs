@@ -1,4 +1,4 @@
-!!! tip
+!!! note
     This is where you actually install Injectify, you are required to have NodeJS pre-installed.
 
 ## Prerequisites
@@ -25,5 +25,5 @@ yarn run install:all
 yarn run deploy
 ```
 
-!!! info
+!!! success
     Injectify will now be running over at [`http://localhost:3000`](http://localhost:3000)

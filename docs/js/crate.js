@@ -13,7 +13,7 @@ crateTag.innerHTML = 'new Crate(' + JSON.stringify({
     }
   },
   style: 'material',
-  beta: false
+  beta: true
 }) + ')'
 
 document.head.appendChild(crateTag)
