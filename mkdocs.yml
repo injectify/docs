@@ -31,6 +31,8 @@ pages:
       - Keylogger: 'getting-started/guide/keylogger.md'
       - Project configuration:
         - Managing users & roles: 'getting-started/guide/project-config/roles.md'
+        - Managing domain filters: 'getting-started/guide/project-config/filters.md'
+        - Project API: 'getting-started/guide/project-config/api.md'
 
 # Extensions
 markdown_extensions:

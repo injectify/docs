@@ -1,11 +1,11 @@
 !!! tip
-    Roles allows you to control who can access your project and what they can do with it.
+    Your project's filters control which domains the payloads are allowed or disallowed to run on. This is good for if someone abuses your project or if you need to temporarily filter out some users.
 
-## Adding / removing users
-If you are an admin or an owner for a project, you can add any user on GitHub (even if they haven't used Injectify before). As soon as they sign in for the first time, they'll be able to access the projects you've gave them access to.
+## Adding / removing filters
+If you are an admin or an owner for a project, you can edit, add and remove filters.
 
-???+ tip "Managing roles"
-    ![Managing roles](https://i.imgur.com/A0bthXT.gif)
+???+ tip "Managing filters"
+    ![Managing filters](https://i.imgur.com/czWcm5o.gif)
 
 ## Different types of roles
 Below explains what the different roles are and what permissions they allow a user to have
