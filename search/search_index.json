@@ -22,12 +22,12 @@
         },
         {
             "location": "/getting-started/installation/mongodb/",
-            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
+            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\nNew deployment\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
             "title": "Creating a MongoDB database"
         },
         {
             "location": "/getting-started/installation/mongodb/#option-1-creating-an-mlab-database",
-            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner  Select  Sandbox  and then click  Continue   Select your preferred region and click  Continue  Enter  injectify  as the database name, click  Continue  and then  Submit order  Click on your new database and select  Users  and then  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
+            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner   Select  Sandbox  and then click  Continue  New deployment   Select your preferred region and click  Continue   Enter  injectify  as the database name, click  Continue  and then  Submit order   Click on your new database and select  Users  and then  Add database user  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
             "title": "[Option 1] Creating an mLab database"
         },
         {
@@ -37,13 +37,93 @@
         },
         {
             "location": "/getting-started/installation/github/",
-            "text": "Info\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
             "title": "Creating a GitHub application"
         },
         {
             "location": "/getting-started/installation/configuration/",
-            "text": "Info\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "Tip\n\n\nIn order to actually use Injectify, you first have to setup the configuration file. In the future, you'll be able to do this from the web interface.\n\n\n\n\n\n\nClone this repo\n\n\nNavigate into the repo and copy \nserver.config.example.js\n to \nserver.config.js\n\n\nOpen \nserver.config.js\n in a text-editor\n\n\n\n\nReplace the GitHub \nclient_id\n and \nclient_secret\n values with your newly created applications ones.\n\n\nScreenshot of the GitHub configuration\n\n\n\n\n\n\nReplace the \nmongodb\n value with your newly created mLab URL (or dedicated MongoDB URI), in the format:\n    \nmongodb\n:\n//<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify\n\n\nScreenshot of the MongoDB configuration",
             "title": "Configuration"
+        },
+        {
+            "location": "/getting-started/installation/setting-up/",
+            "text": "Tip\n\n\nThis is where you actually install Injectify, you are required to have NodeJS pre-installed.\n\n\n\n\nPrerequisites\n\u00b6\n\n\n\n\nFollowed the previous steps\n\n\nNodeJS\n\n\nYarn package manager\n\n\n(Optional) \nA swap file\n - reason being that \nWebpack uses loads of memory\n\n\n\n\nInstalling\n\u00b6\n\n\nWindows\n\u00b6\n\n\nnpm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\nLinux\n\u00b6\n\n\nsudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\n\n\nInfo\n\n\nInjectify will now be running over at \nhttp://localhost:3000",
+            "title": "Setting up the server"
+        },
+        {
+            "location": "/getting-started/installation/setting-up/#prerequisites",
+            "text": "Followed the previous steps  NodeJS  Yarn package manager  (Optional)  A swap file  - reason being that  Webpack uses loads of memory",
+            "title": "Prerequisites"
+        },
+        {
+            "location": "/getting-started/installation/setting-up/#installing",
+            "text": "",
+            "title": "Installing"
+        },
+        {
+            "location": "/getting-started/installation/setting-up/#windows",
+            "text": "npm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy",
+            "title": "Windows"
+        },
+        {
+            "location": "/getting-started/installation/setting-up/#linux",
+            "text": "sudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy   Info  Injectify will now be running over at  http://localhost:3000",
+            "title": "Linux"
+        },
+        {
+            "location": "/getting-started/using/payload-generator/",
+            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "title": "Generating JS payloads"
+        },
+        {
+            "location": "/getting-started/using/inject/",
+            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "title": "Hooking browsers"
+        },
+        {
+            "location": "/getting-started/using/passwords/",
+            "text": "Tip\n\n\nIn order to actually use Injectify, you first have to setup the configuration file. In the future, you'll be able to do this from the web interface.\n\n\n\n\n\n\nClone this repo\n\n\nNavigate into the repo and copy \nserver.config.example.js\n to \nserver.config.js\n\n\nOpen \nserver.config.js\n in a text-editor\n\n\n\n\nReplace the GitHub \nclient_id\n and \nclient_secret\n values with your newly created applications ones.\n\n\nScreenshot of the GitHub configuration\n\n\n\n\n\n\nReplace the \nmongodb\n value with your newly created mLab URL (or dedicated MongoDB URI), in the format:\n    \nmongodb\n:\n//<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify\n\n\nScreenshot of the MongoDB configuration",
+            "title": "Password extractor"
+        },
+        {
+            "location": "/getting-started/using/keylogger/",
+            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\nNew deployment\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
+            "title": "Keylogger"
+        },
+        {
+            "location": "/getting-started/using/keylogger/#option-1-creating-an-mlab-database",
+            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner   Select  Sandbox  and then click  Continue  New deployment   Select your preferred region and click  Continue   Enter  injectify  as the database name, click  Continue  and then  Submit order   Click on your new database and select  Users  and then  Add database user  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
+            "title": "[Option 1] Creating an mLab database"
+        },
+        {
+            "location": "/getting-started/using/keylogger/#option-2-setting-up-a-dedicated-mongodb-database",
+            "text": "Todo",
+            "title": "[Option 2] Setting up a dedicated MongoDB database"
+        },
+        {
+            "location": "/getting-started/using/project-config/",
+            "text": "Tip\n\n\nThis is where you actually install Injectify, you are required to have NodeJS pre-installed.\n\n\n\n\nPrerequisites\n\u00b6\n\n\n\n\nFollowed the previous steps\n\n\nNodeJS\n\n\nYarn package manager\n\n\n(Optional) \nA swap file\n - reason being that \nWebpack uses loads of memory\n\n\n\n\nInstalling\n\u00b6\n\n\nWindows\n\u00b6\n\n\nnpm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\nLinux\n\u00b6\n\n\nsudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\n\n\nInfo\n\n\nInjectify will now be running over at \nhttp://localhost:3000",
+            "title": "Project configuration"
+        },
+        {
+            "location": "/getting-started/using/project-config/#prerequisites",
+            "text": "Followed the previous steps  NodeJS  Yarn package manager  (Optional)  A swap file  - reason being that  Webpack uses loads of memory",
+            "title": "Prerequisites"
+        },
+        {
+            "location": "/getting-started/using/project-config/#installing",
+            "text": "",
+            "title": "Installing"
+        },
+        {
+            "location": "/getting-started/using/project-config/#windows",
+            "text": "npm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy",
+            "title": "Windows"
+        },
+        {
+            "location": "/getting-started/using/project-config/#linux",
+            "text": "sudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy   Info  Injectify will now be running over at  http://localhost:3000",
+            "title": "Linux"
         }
     ]
 }

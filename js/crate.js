@@ -7,6 +7,11 @@ crateTag.innerHTML = 'new Crate(' + JSON.stringify({
   colors: {
     toggle: '#3F51B5'
   },
+  notifications: {
+    toasts: {
+      visibilityTime: 0
+    }
+  },
   style: 'material',
   beta: false
 }) + ')'
