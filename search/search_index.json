@@ -2,53 +2,48 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Welcome to MkDocs"
+            "text": "Introduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.\n\n\n\n\nWhat does it do good?\n\u00b6",
+            "title": "Introduction"
         },
         {
-            "location": "/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
+            "location": "/#introduction",
+            "text": "Injectify is a web based MiTM tool, similiar to  BeEF  (although completely unrelated in terms of source code).",
+            "title": "Introduction"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/#what-can-it-do",
+            "text": "Create a reverse Javascript shell between the victim and the attacker.   Records keystrokes and logs them to a database.   Extract and log  saved passwords  from the browser.",
+            "title": "What can it do?"
         },
         {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
-            "location": "/getting-started/installation/",
-            "text": "Installation\n\n\nRequirements\n\n\n\n\nMongoDB server\n\n\nNodeJS\n\n\nYarn package manager\n\n\n(Optional) \nA swap file\n - reason being that \nWebpack uses loads of memory\n\n\n\n\nCreating a MongoDB server\n\n\nFor simplicity, we're going to use \nmLab\n with the Free plan. Though it's recommended to [[setup your own MongoDB server|Development server]] if you plan to have a lot of traffic.\n\n\n\n\nHead over to \nmLab and create an account\n (make sure to verify your email)\n\n\nClick on \nCreate new\n in the upper right corner\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\nCreating a GitHub oauth application\n\n\n\n\nCreate a \nnew GitHub application\n with the following values:\n\n\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\n\n\nSetting up the server\n\n\n\n\nClone this repo\n\n\nCopy \nserver.config.example.js\n to \nserver.config.js\n\n\n\n\nReplace the GitHub \nclient_id\n and \nclient_secret\n values with your newly created applications ones.\n\n\n\n\n\n\n\n\n\nReplace the \nmongodb\n value with your newly created mLab URL, in the format \nmongodb://<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify\n.\n\n\n\n\n\n\n\n\n\nRun the following in a terminal at the root of the injectify repo:\n\n\n\n\n\n\nsudo npm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\nInjectify will now be running over at \nhttp://localhost:3000",
-            "title": "Installation"
-        },
-        {
-            "location": "/getting-started/installation/#installation",
+            "location": "/#what-does-it-do-good",
             "text": "",
-            "title": "Installation"
+            "title": "What does it do good?"
         },
         {
-            "location": "/getting-started/installation/#requirements",
-            "text": "MongoDB server  NodeJS  Yarn package manager  (Optional)  A swap file  - reason being that  Webpack uses loads of memory",
-            "title": "Requirements"
+            "location": "/getting-started/installation/mongodb/",
+            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
+            "title": "Creating a MongoDB database"
         },
         {
-            "location": "/getting-started/installation/#creating-a-mongodb-server",
-            "text": "For simplicity, we're going to use  mLab  with the Free plan. Though it's recommended to [[setup your own MongoDB server|Development server]] if you plan to have a lot of traffic.   Head over to  mLab and create an account  (make sure to verify your email)  Click on  Create new  in the upper right corner  Select  Sandbox  and then click  Continue   Select your preferred region and click  Continue  Enter  injectify  as the database name, click  Continue  and then  Submit order  Click on your new database and select  Users  and then  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
-            "title": "Creating a MongoDB server"
+            "location": "/getting-started/installation/mongodb/#option-1-creating-an-mlab-database",
+            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner  Select  Sandbox  and then click  Continue   Select your preferred region and click  Continue  Enter  injectify  as the database name, click  Continue  and then  Submit order  Click on your new database and select  Users  and then  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
+            "title": "[Option 1] Creating an mLab database"
         },
         {
-            "location": "/getting-started/installation/#creating-a-github-oauth-application",
-            "text": "Create a  new GitHub application  with the following values:      Field  Value      Application name  any    Homepage URL  any    Application description  any    Authorization callback URL  https://injectify.samdd.me",
-            "title": "Creating a GitHub oauth application"
+            "location": "/getting-started/installation/mongodb/#option-2-setting-up-a-dedicated-mongodb-database",
+            "text": "Todo",
+            "title": "[Option 2] Setting up a dedicated MongoDB database"
         },
         {
-            "location": "/getting-started/installation/#setting-up-the-server",
-            "text": "Clone this repo  Copy  server.config.example.js  to  server.config.js   Replace the GitHub  client_id  and  client_secret  values with your newly created applications ones.     Replace the  mongodb  value with your newly created mLab URL, in the format  mongodb://<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify .     Run the following in a terminal at the root of the injectify repo:    sudo npm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy  Injectify will now be running over at  http://localhost:3000",
-            "title": "Setting up the server"
+            "location": "/getting-started/installation/github/",
+            "text": "Info\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "title": "Creating a GitHub application"
+        },
+        {
+            "location": "/getting-started/installation/configuration/",
+            "text": "Info\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "title": "Configuration"
         }
     ]
 }
