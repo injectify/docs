@@ -35,6 +35,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji
   - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
 
 # Resources
 extra_javascript:

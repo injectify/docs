@@ -1,16 +1,21 @@
 # Configuration
-!!! info
-    Injectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.
+!!! tip
+    In order to actually use Injectify, you first have to setup the configuration file. In the future, you'll be able to do this from the web interface.
 
-1. Head over to [GitHub.com](https://github.com) and create an account if you haven't already.
-2. Create a [new GitHub application](https://github.com/settings/applications/new) and specify the following values:
+1. [Clone this repo](git@github.com:samdenty99/injectify.git)
+2. Navigate into the repo and copy `server.config.example.js` to `server.config.js`
+3. Open `server.config.js` in a text-editor
+4. Replace the GitHub `client_id` and `client_secret` values with your newly created applications ones.
 
-    | Field                      | Value                        |
-    |----------------------------|------------------------------|
-    | Application name           | any                          |
-    | Homepage URL               | any                          |
-    | Application description    | any                          |
-    | Authorization callback URL | `https://injectify.samdd.me` |
+    ???+ note "Screenshot of the GitHub configuration"
+        <img src="https://i.imgur.com/JId0Wyk.png" alt="GitHub client ID & secret" height="150">
+        <img src="https://i.imgur.com/cRcES59.png" alt="server.config.js" height="150">
 
-    ??? note "What it should look like"
-        <img src="https://i.imgur.com/oiuiMhR.png" alt="GitHub Applications page" height="310">
+5. Replace the `mongodb` value with your newly created mLab URL (or dedicated MongoDB URI), in the format:
+    ```#!go
+    mongodb://<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify
+    ```
+
+    ???+ note "Screenshot of the MongoDB configuration"
+        <img src="https://i.imgur.com/UBtGrCh.png" alt="mLab database url" height="90">
+        <img src="https://i.imgur.com/TE8DaLj.png" alt="server.config.js" height="90">

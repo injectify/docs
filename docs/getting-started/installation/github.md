@@ -12,5 +12,5 @@
     | Application description    | any                          |
     | Authorization callback URL | `https://injectify.samdd.me` |
 
-    ??? note "What it should look like"
+    ???+ note "What it should look like"
         <img src="https://i.imgur.com/oiuiMhR.png" alt="GitHub Applications page" height="310">
