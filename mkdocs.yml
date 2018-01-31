@@ -25,11 +25,12 @@ pages:
       - Configuration: 'getting-started/installation/configuration.md'
       - Setting up the server: 'getting-started/installation/setting-up.md'
     - Using it:
-      - Generating JS payloads: 'getting-started/using/payload-generator.md'
-      - Hooking browsers: 'getting-started/using/inject.md'
-      - Password extractor: 'getting-started/using/passwords.md'
-      - Keylogger: 'getting-started/using/keylogger.md'
-      - Project configuration: 'getting-started/using/project-config.md'
+      - Generating JS payloads: 'getting-started/guide/payload-generator.md'
+      - Hooking browsers: 'getting-started/guide/inject.md'
+      - Password extractor: 'getting-started/guide/passwords.md'
+      - Keylogger: 'getting-started/guide/keylogger.md'
+      - Project configuration:
+        - Managing users & roles: 'getting-started/guide/project-config/roles.md'
 
 # Extensions
 markdown_extensions:
