@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.\n\n\n\n\nWhat does it do good?\n\u00b6",
+            "text": "Introduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.\n\n\n\n\nTest it out\n\u00b6\n\n\nhttps://injectify.samdd.me",
             "title": "Introduction"
         },
         {
@@ -16,9 +16,9 @@
             "title": "What can it do?"
         },
         {
-            "location": "/#what-does-it-do-good",
-            "text": "",
-            "title": "What does it do good?"
+            "location": "/#test-it-out",
+            "text": "https://injectify.samdd.me",
+            "title": "Test it out"
         },
         {
             "location": "/getting-started/installation/mongodb/",
@@ -37,7 +37,7 @@
         },
         {
             "location": "/getting-started/installation/github/",
-            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "Note\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
             "title": "Creating a GitHub application"
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "location": "/getting-started/installation/setting-up/",
-            "text": "Tip\n\n\nThis is where you actually install Injectify, you are required to have NodeJS pre-installed.\n\n\n\n\nPrerequisites\n\u00b6\n\n\n\n\nFollowed the previous steps\n\n\nNodeJS\n\n\nYarn package manager\n\n\n(Optional) \nA swap file\n - reason being that \nWebpack uses loads of memory\n\n\n\n\nInstalling\n\u00b6\n\n\nWindows\n\u00b6\n\n\nnpm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\nLinux\n\u00b6\n\n\nsudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\n\n\nInfo\n\n\nInjectify will now be running over at \nhttp://localhost:3000",
+            "text": "Note\n\n\nThis is where you actually install Injectify, you are required to have NodeJS pre-installed.\n\n\n\n\nPrerequisites\n\u00b6\n\n\n\n\nFollowed the previous steps\n\n\nNodeJS\n\n\nYarn package manager\n\n\n(Optional) \nA swap file\n - reason being that \nWebpack uses loads of memory\n\n\n\n\nInstalling\n\u00b6\n\n\nWindows\n\u00b6\n\n\nnpm i -g yarn\nyarn global add typescript\nyarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\nLinux\n\u00b6\n\n\nsudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy\n\n\n\n\n\n\nSuccess\n\n\nInjectify will now be running over at \nhttp://localhost:3000",
             "title": "Setting up the server"
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "location": "/getting-started/installation/setting-up/#linux",
-            "text": "sudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy   Info  Injectify will now be running over at  http://localhost:3000",
+            "text": "sudo npm i -g yarn\nsudo yarn global add typescript\nsudo yarn global add pm2\nyarn run install:all\nyarn run deploy   Success  Injectify will now be running over at  http://localhost:3000",
             "title": "Linux"
         },
         {
@@ -214,6 +214,11 @@
             "location": "/demos/interface/",
             "text": "Below are some recordings of Injectify in action.\n\n\nVirtual client tabs\nConsole replication\nConsole data types\nEditor module intellisense\nEditor intellisense\nLive updates\nTab manipulation",
             "title": "Interface demos"
+        },
+        {
+            "location": "/chat/",
+            "text": "var main = document.getElementsByClassName('md-main')[0]\n  main.innerHTML = '<iframe style=\"width:100%;height:calc(100vh - 48px - 48px);border:none;\" src=\"https://beta.widgetbot.io/embed/335836376031428618/377173106940182529/0002/\"></iframe>'\n  main.style = 'background: #36393E'",
+            "title": "Discord"
         }
     ]
 }
