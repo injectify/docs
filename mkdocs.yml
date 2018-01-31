@@ -10,14 +10,37 @@ copyright: 'Copyright &copy; 2018 Sam Denty'
 # Configuration
 theme:
   name: 'material'
-  logo: 'images/logo.svg'
-  favicon: 'images/favicon.ico'
+  logo: 'assets/images/logo.svg'
+  favicon: 'assets/images/favicon.ico'
   feature:
     tabs: true
 
+# Pages
+pages:
+  - Introduction: 'index.md'
+  - Getting Started:
+    - Installation:
+      - Creating a MongoDB database: 'getting-started/installation/mongodb.md'
+      - Creating a GitHub application: 'getting-started/installation/github.md'
+      - Configuration: 'getting-started/installation/configuration.md'
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - meta
+  - footnotes
+  - codehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.smartsymbols
+
 # Resources
 extra_javascript:
-  - 'js/crate.js'
+  - 'assets/js/crate.js'
+extra_css:
+  - 'assets/css/main.css'
 
 # Analytics
 google_analytics:

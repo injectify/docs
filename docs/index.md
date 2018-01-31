@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Injectify is a web based MiTM tool, similiar to [BeEF](http://beefproject.com/) (although completely unrelated in terms of source code).
 
-## Commands
+## What can it do?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+* :zap: Create a reverse Javascript shell between the victim and the attacker.
+* :keyboard: Records keystrokes and logs them to a database.
+* :closed_lock_with_key: Extract and log [saved passwords](https://twitter.com/thesamdd/status/947251299262836741) from the browser.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## What does it do good?
