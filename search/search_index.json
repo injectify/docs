@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.\n\n\n\n\nTest it out\n\u00b6\n\n\nhttps://injectify.samdd.me",
+            "text": "Perform advanced MiTM attacks on websites with ease.\n  \n\n\n\n\n\n\n  \n\n    \n\n      Test it out\n    \n\u00a0|\n    \n\n      Installation\n    \n\u00a0|\n    \n\n      Trello\n    \n\u00a0|\n    \n\n      Patreon\n    \n\n  \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n\n\n\n\n\n\n\nIntroduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.",
             "title": "Introduction"
         },
         {
@@ -14,11 +14,6 @@
             "location": "/#what-can-it-do",
             "text": "Create a reverse Javascript shell between the victim and the attacker.   Records keystrokes and logs them to a database.   Extract and log  saved passwords  from the browser.",
             "title": "What can it do?"
-        },
-        {
-            "location": "/#test-it-out",
-            "text": "https://injectify.samdd.me",
-            "title": "Test it out"
         },
         {
             "location": "/getting-started/installation/mongodb/",
