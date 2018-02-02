@@ -17,3 +17,11 @@ crateTag.innerHTML = 'new Crate(' + JSON.stringify({
 }) + ')'
 
 document.head.appendChild(crateTag)
+
+var sc_project=11546194
+var sc_invisible=1
+var sc_security="b588ced0"
+var sc_https=1
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' async src='" + scJsHost + "statcounter.com/counter/counter_xhtml.js'></"+"script>")
