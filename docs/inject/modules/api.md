@@ -132,6 +132,6 @@ The callback allows your module to sync / async return data to it's calling Prom
       // Example 1
       Module.resolve('Returned data')
 
-      // Example 1
+      // Example 2
       Module.reject('My error')
       ```
