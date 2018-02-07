@@ -67,33 +67,23 @@
         },
         {
             "location": "/usage/payload-generator/",
-            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "",
             "title": "Generating JS payloads"
         },
         {
             "location": "/usage/inject/",
-            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "",
             "title": "Hooking browsers"
         },
         {
             "location": "/usage/passwords/",
-            "text": "Tip\n\n\nIn order to actually use Injectify, you first have to setup the configuration file. In the future, you'll be able to do this from the web interface.\n\n\n\n\n\n\nClone this repo\n\n\nNavigate into the repo and copy \nserver.config.example.js\n to \nserver.config.js\n\n\nOpen \nserver.config.js\n in a text-editor\n\n\n\n\nReplace the GitHub \nclient_id\n and \nclient_secret\n values with your newly created applications ones.\n\n\nScreenshot of the GitHub configuration\n\n\n\n\n\n\nReplace the \nmongodb\n value with your newly created mLab URL (or dedicated MongoDB URI), in the format:\n    \nmongodb\n:\n//<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify\n\n\nScreenshot of the MongoDB configuration",
+            "text": "",
             "title": "Password extractor"
         },
         {
             "location": "/usage/keylogger/",
-            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\nNew deployment\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
+            "text": "",
             "title": "Keylogger"
-        },
-        {
-            "location": "/usage/keylogger/#option-1-creating-an-mlab-database",
-            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner   Select  Sandbox  and then click  Continue  New deployment   Select your preferred region and click  Continue   Enter  injectify  as the database name, click  Continue  and then  Submit order   Click on your new database and select  Users  and then  Add database user  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
-            "title": "[Option 1] Creating an mLab database"
-        },
-        {
-            "location": "/usage/keylogger/#option-2-setting-up-a-dedicated-mongodb-database",
-            "text": "Todo",
-            "title": "[Option 2] Setting up a dedicated MongoDB database"
         },
         {
             "location": "/usage/project-config/roles/",
@@ -137,33 +127,23 @@
         },
         {
             "location": "/usage/payload-generator/",
-            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "",
             "title": "Generating JS payloads"
         },
         {
             "location": "/usage/inject/",
-            "text": "Tip\n\n\nInjectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.\n\n\n\n\n\n\nHead over to \nGitHub.com\n and create an account if you haven't already.\n\n\n\n\nCreate a \nnew GitHub application\n and specify the following values:\n\n\n\n\n\n\n\n\nField\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nApplication name\n\n\nany\n\n\n\n\n\n\nHomepage URL\n\n\nany\n\n\n\n\n\n\nApplication description\n\n\nany\n\n\n\n\n\n\nAuthorization callback URL\n\n\nhttps://injectify.samdd.me\n\n\n\n\n\n\n\n\nWhat it should look like",
+            "text": "",
             "title": "Hooking browsers"
         },
         {
             "location": "/usage/passwords/",
-            "text": "Tip\n\n\nIn order to actually use Injectify, you first have to setup the configuration file. In the future, you'll be able to do this from the web interface.\n\n\n\n\n\n\nClone this repo\n\n\nNavigate into the repo and copy \nserver.config.example.js\n to \nserver.config.js\n\n\nOpen \nserver.config.js\n in a text-editor\n\n\n\n\nReplace the GitHub \nclient_id\n and \nclient_secret\n values with your newly created applications ones.\n\n\nScreenshot of the GitHub configuration\n\n\n\n\n\n\nReplace the \nmongodb\n value with your newly created mLab URL (or dedicated MongoDB URI), in the format:\n    \nmongodb\n:\n//<dbuser>:<dbpassword>@XXXX.mlab.com:XXXX/injectify\n\n\nScreenshot of the MongoDB configuration",
+            "text": "",
             "title": "Password extractor"
         },
         {
             "location": "/usage/keylogger/",
-            "text": "Tip\n\n\nFor simplicity and compatibility, we recommend using \nmLab\n with the Free plan. If you intend to have a lot of traffic you can also setup a \ndedicated database\n\n\n\n\n[Option 1]\n Creating an mLab database\n\u00b6\n\n\n\n\nHead over to \nmLab and create an account\n\n\n\n\n\n\nMake sure to \nverify your email\n, if you don't then it won't allow you to create a database\n\n\n\n\n\n\nClick on \nCreate new\n in the upper right corner\n\n\n\n\nSelect \nSandbox\n and then click \nContinue\n\n\nNew deployment\n\n\n\n\nSelect your preferred region and click \nContinue\n\n\n\n\nEnter \ninjectify\n as the database name, click \nContinue\n and then \nSubmit order\n\n\n\n\nClick on your new database and select \nUsers\n and then \nAdd database user\n\n\nAdd database user\n\n\n\n\nChoose a username and password and click \nCreate\n (make sure \nread-only\n is left unchecked)\n\n\n\n\n\n\n\n\n[Option 2]\n Setting up a dedicated MongoDB database\n\u00b6\n\n\nTodo",
+            "text": "",
             "title": "Keylogger"
-        },
-        {
-            "location": "/usage/keylogger/#option-1-creating-an-mlab-database",
-            "text": "Head over to  mLab and create an account    Make sure to  verify your email , if you don't then it won't allow you to create a database    Click on  Create new  in the upper right corner   Select  Sandbox  and then click  Continue  New deployment   Select your preferred region and click  Continue   Enter  injectify  as the database name, click  Continue  and then  Submit order   Click on your new database and select  Users  and then  Add database user  Add database user   Choose a username and password and click  Create  (make sure  read-only  is left unchecked)",
-            "title": "[Option 1] Creating an mLab database"
-        },
-        {
-            "location": "/usage/keylogger/#option-2-setting-up-a-dedicated-mongodb-database",
-            "text": "Todo",
-            "title": "[Option 2] Setting up a dedicated MongoDB database"
         },
         {
             "location": "/usage/project-config/roles/",
@@ -206,14 +186,49 @@
             "title": "Accessing the API"
         },
         {
+            "location": "/inject/modules/create/",
+            "text": "",
+            "title": "Creating a module"
+        },
+        {
+            "location": "/inject/modules/api/",
+            "text": "Tip\n\n\nThe Module API allows you to pass parameters, callback functions and utilize the module's global state API.\n\n\n\n\nOverview\n\u00b6\n\n\nEvery time a module is called a new \nModule\n object is created. This object gives access to the following:\n\n\nGetters\nThe modules current global state\nThe parameters passed to the module.\nThe name the module was called under.\nA unique token assigned for the call.\nSetters\nResolve / reject the modules Promise callback.\nUpdate the modules global state\nUsage\n\u00b6\n\n\nModule typings\nTypescript typings for the \nModule\n object:\n\nModule\n:\n \n{\n\n  \n/**\n\n\n   * The name the module was called as\n\n\n   */\n\n  \nname\n: \nstring\n\n  \n/**\n\n\n   * The parameters passed to the module\n\n\n   */\n\n  \nparams\n: \nany\n\n  \n/**\n\n\n   * Modules global state, persistent until the page is reloaded\n\n\n   */\n\n  \nstate\n: \nany\n\n  \n/**\n\n\n   * Updates the module's global state\n\n\n   * @param newState An object containing the new state\n\n\n   */\n\n  \nsetState\n: \nFunction\n\n  \n/**\n\n\n   * A unique token generated every time a module is called\n\n\n   */\n\n  \ntoken\n: \nstring\n\n  \n/**\n\n\n   * Resolve the modules calling Promise\n\n\n   */\n\n  \nresolve\n(\ndata?\n: \nany\n)\n:\n \nFunction\n\n  \n/**\n\n\n   * Reject the modules calling Promise\n\n\n   */\n\n  \nreject\n(\ndata?\n: \nany\n)\n:\n \nFunction\n\n  \n/**\n\n\n   * Whether or not the modules callback has been resolved\n\n\n   */\n\n  \nresolved\n: \nboolean\n\n\n}\n\n\nExamples\n\u00b6\n\n\nModule parameters\n\u00b6\n\n\nThe parameters allows you pass data to the module:\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n,\n \n'example string'\n)\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n,\n \n{\n \nexample\n:\n \n1\n,\n \ndoIt\n:\n \ntrue\n \n})\n\n\n\n\n\n\n\n\n\nModule source code\n\n\n// Example 1\n\n\nconsole\n.\nlog\n(\nModule\n.\nparams\n)\n \n// \"example string\"\n\n\n\n// Example 2\n\n\nconsole\n.\nlog\n(\nModule\n.\nparams\n)\n \n// { example: 1, doIt: true }\n\n\n\n\n\n\n\n\n\nModule state\n\u00b6\n\n\nThe state allows you to globally store data across module calls:\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n)\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n)\n\n\n\n\n\n\n\n\n\nModule source code\n\n\nif\n \n(\n!\nModule\n.\nstate\n)\n \n{\n\n  \nModule\n.\nsetState\n(\n123\n)\n\n  \nconsole\n.\nlog\n(\n`Set the state to \n${\nModule\n.\nstate\n}\n`\n)\n\n\n}\n \nelse\n \n{\n\n  \nconsole\n.\nlog\n(\n`Module state = \n${\nModule\n.\nstate\n}\n`\n)\n\n\n}\n\n\n\n// Example 1: Set the state to 123\n\n\n// Example 2: Module state = 123\n\n\n\n\n\n\n\n\n\nModule Promise callback\n\u00b6\n\n\nThe callback allows your module to sync / async return data to it's calling Promise.\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n).\nthen\n(\ndata\n \n=>\n \n{\n\n  \nconsole\n.\nlog\n(\ndata\n)\n\n\n})\n \n// \"Returned data\"\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n).\nthen\n(\ndata\n \n=>\n \n{\n\n\n}).\ncatch\n(\nerr\n \n=>\n \n{\n\n  \nconsole\n.\nlog\n(\nerr\n)\n\n\n})\n  \n// \"My error\"\n\n\n\n\n\n\n\n\n\nModule source code\n\n\n// Example 1\n\n\nModule\n.\nresolve\n(\n'Returned data'\n)\n\n\n\n// Example 2\n\n\nModule\n.\nreject\n(\n'My error'\n)",
+            "title": "Module API"
+        },
+        {
+            "location": "/inject/modules/api/#overview",
+            "text": "Every time a module is called a new  Module  object is created. This object gives access to the following:  Getters The modules current global state The parameters passed to the module. The name the module was called under. A unique token assigned for the call. Setters Resolve / reject the modules Promise callback. Update the modules global state",
+            "title": "Overview"
+        },
+        {
+            "location": "/inject/modules/api/#usage",
+            "text": "Module typings Typescript typings for the  Module  object: Module :   { \n   /**     * The name the module was called as     */ \n   name :  string \n   /**     * The parameters passed to the module     */ \n   params :  any \n   /**     * Modules global state, persistent until the page is reloaded     */ \n   state :  any \n   /**     * Updates the module's global state     * @param newState An object containing the new state     */ \n   setState :  Function \n   /**     * A unique token generated every time a module is called     */ \n   token :  string \n   /**     * Resolve the modules calling Promise     */ \n   resolve ( data? :  any ) :   Function \n   /**     * Reject the modules calling Promise     */ \n   reject ( data? :  any ) :   Function \n   /**     * Whether or not the modules callback has been resolved     */ \n   resolved :  boolean  }",
+            "title": "Usage"
+        },
+        {
+            "location": "/inject/modules/api/#examples",
+            "text": "",
+            "title": "Examples"
+        },
+        {
+            "location": "/inject/modules/api/#module-parameters",
+            "text": "The parameters allows you pass data to the module:   Calling the module  // Example 1  injectify . module ( 'example' ,   'example string' )  // Example 2  injectify . module ( 'example' ,   {   example :   1 ,   doIt :   true   })     Module source code  // Example 1  console . log ( Module . params )   // \"example string\"  // Example 2  console . log ( Module . params )   // { example: 1, doIt: true }",
+            "title": "Module parameters"
+        },
+        {
+            "location": "/inject/modules/api/#module-state",
+            "text": "The state allows you to globally store data across module calls:   Calling the module  // Example 1  injectify . module ( 'example' )  // Example 2  injectify . module ( 'example' )     Module source code  if   ( ! Module . state )   { \n   Module . setState ( 123 ) \n   console . log ( `Set the state to  ${ Module . state } ` )  }   else   { \n   console . log ( `Module state =  ${ Module . state } ` )  }  // Example 1: Set the state to 123  // Example 2: Module state = 123",
+            "title": "Module state"
+        },
+        {
+            "location": "/inject/modules/api/#module-promise-callback",
+            "text": "The callback allows your module to sync / async return data to it's calling Promise.   Calling the module  // Example 1  injectify . module ( 'example' ). then ( data   =>   { \n   console . log ( data )  })   // \"Returned data\"  // Example 2  injectify . module ( 'example' ). then ( data   =>   {  }). catch ( err   =>   { \n   console . log ( err )  })    // \"My error\"     Module source code  // Example 1  Module . resolve ( 'Returned data' )  // Example 2  Module . reject ( 'My error' )",
+            "title": "Module Promise callback"
+        },
+        {
             "location": "/demos/interface/",
             "text": "Below are some recordings of Injectify in action.\n\n\nVirtual client tabs\nConsole replication\nConsole data types\nEditor module intellisense\nEditor intellisense\nLive updates\nTab manipulation",
             "title": "Interface demos"
-        },
-        {
-            "location": "/chat/",
-            "text": "var main = document.getElementsByClassName('md-main')[0]\n  main.innerHTML = '<iframe style=\"width:100%;height:calc(100vh - 48px - 48px);border:none;\" src=\"https://beta.widgetbot.io/embed/335836376031428618/377173106940182529/0002/\"></iframe>'\n  main.style = 'background: #36393E'",
-            "title": "Discord"
         }
     ]
 }

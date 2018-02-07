@@ -219,13 +219,19 @@
         
   
   
+    
+    
+  
+  
     <li class="md-tabs__item">
       
-        <a href="../../demos/interface/" title="Demos" class="md-tabs__link">
-          Demos
+        <a href="../../inject/modules/create/" title="Inject" class="md-tabs__link">
+          Inject
         </a>
       
     </li>
+  
+
   
 
       
@@ -234,8 +240,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../chat/" title="Chat" class="md-tabs__link">
-          Chat
+        <a href="../../demos/interface/" title="Demos" class="md-tabs__link">
+          Demos
         </a>
       
     </li>
@@ -683,11 +689,30 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Demos
+      Inject
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        Demos
+        Inject
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        Modules
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -698,9 +723,26 @@
 
 
   <li class="md-nav__item">
-    <a href="../../demos/interface/" title="Interface demos" class="md-nav__link">
-      Interface demos
+    <a href="../../inject/modules/create/" title="Creating a module" class="md-nav__link">
+      Creating a module
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../inject/modules/api/" title="Module API" class="md-nav__link">
+      Module API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -719,11 +761,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Chat
+      Demos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Chat
+        Demos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -734,8 +776,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chat/" title="Discord" class="md-nav__link">
-      Discord
+    <a href="../../demos/interface/" title="Interface demos" class="md-nav__link">
+      Interface demos
     </a>
   </li>
 
@@ -762,42 +804,7 @@
                 
                   <h1>Hooking browsers</h1>
                 
-                <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Injectify uses a GitHub SSO based system for authentication, instead of locally managing credentials. This makes it securer and adds the ability to utilise GitHub gists, repos etc.</p>
-</div>
-<ol>
-<li>Head over to <a href="https://github.com">GitHub.com</a> and create an account if you haven't already.</li>
-<li>
-<p>Create a <a href="https://github.com/settings/applications/new">new GitHub application</a> and specify the following values:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Application name</td>
-<td>any</td>
-</tr>
-<tr>
-<td>Homepage URL</td>
-<td>any</td>
-</tr>
-<tr>
-<td>Application description</td>
-<td>any</td>
-</tr>
-<tr>
-<td>Authorization callback URL</td>
-<td><code class="codehilite">https://injectify.samdd.me</code></td>
-</tr>
-</tbody>
-</table>
-<details class="note" open="open"><summary>What it should look like</summary><p><img src="https://i.imgur.com/oiuiMhR.png" alt="GitHub Applications page" height="310"></p></details></li>
-</ol>
+                
                 
                   
                 
