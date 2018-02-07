@@ -45,10 +45,12 @@ pages:
       - Managing users & roles: 'usage/project-config/roles.md'
       - Managing domain filters: 'usage/project-config/filters.md'
       - Project API: 'usage/project-config/api.md'
+  - Inject:
+    - Modules:
+      - Creating a module: 'inject/modules/create.md'
+      - Module API: 'inject/modules/api.md'
   - Demos:
       - Interface demos: 'demos/interface.md'
-  - Chat:
-    - Discord: 'chat.md'
 
   # Extensions
 markdown_extensions:
