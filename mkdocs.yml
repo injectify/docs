@@ -15,6 +15,7 @@ theme:
   name: 'material'
   logo: 'assets/images/logo.svg'
   favicon: 'assets/images/favicon.ico'
+  custom_dir: 'docs/assets/theme'
   feature:
     tabs: true
 
@@ -49,6 +50,7 @@ pages:
     - Modules:
       - Creating a module: 'inject/modules/create.md'
       - Module API: 'inject/modules/api.md'
+      - Server-side execution: 'inject/modules/server-side.md'
   - Demos:
       - Interface demos: 'demos/interface.md'
 
