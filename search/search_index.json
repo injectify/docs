@@ -226,6 +226,66 @@
             "title": "Module Promise callback"
         },
         {
+            "location": "/inject/modules/server-side/",
+            "text": "Tip\n\n\nServer-side execution allows you to run NodeJS snippets directly in your modules javascript file, similiar to PHP.\n\n\n\n\nExample\n\u00b6\n\n\nIn the below example \nLodash\n is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.\n\n\n\n\nModule source code\n\n\nlet\n \nactiveUser\n \n=\n \n$\n(\n_\n.\nfind\n([\n\n  \n{\n \n'user'\n:\n \n'barney'\n,\n  \n'age'\n:\n \n36\n,\n \n'active'\n:\n \ntrue\n \n},\n\n  \n{\n \n'user'\n:\n \n'fred'\n,\n    \n'age'\n:\n \n40\n,\n \n'active'\n:\n \nfalse\n \n},\n\n  \n{\n \n'user'\n:\n \n'pebbles'\n,\n \n'age'\n:\n \n1\n,\n  \n'active'\n:\n \ntrue\n \n}\n\n\n],\n \n'active'\n))\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n$\n(\n_\n.\nrandom\n(\n100\n))\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \nactiveUser\n \n=\n \n{\n \n'user'\n:\n \n'barney'\n,\n  \n'age'\n:\n \n36\n,\n \n'active'\n:\n \ntrue\n \n}\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n46\n\n\n\n\n\n\n\nUse cases\n\u00b6\n\n\n\n\nMinimize network traffic between the server and client\n\n\nLarge libraries don't need to be sent to the client\n\n\nCPU intensive calculations can be performed on the server\n\n\n\n\n\n\nPerform web requests without worrying about CORS\n\n\nRandomize the modules actions to prevent reverse-engineering\n\n\nRun shell commands on the server\n\n\n\n\nIs it secure?\n\u00b6\n\n\nYes. The only way for server-side code to be executed is by placing it in the modules \nbundle.js\n. Code cannot be changed at processing time.\n\n\nExecuting methods\n\u00b6\n\n\nDynamic functions\n\u00b6\n\n\nDynamic functions are expressed as normal javascript functions, they are evaluated in the same process as the server (and have access to all the same variables)\n\n\n\n\nModule source code\n\n\nlet\n \ndata\n \n=\n \n$\n(()\n \n=>\n \n{\n\n  \nreturn\n \n{\n\n    \ntime\n:\n \n+\nnew\n \nDate\n()\n\n  \n}\n\n\n})\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \ndata\n \n=\n \n{\n\n  \ntime\n:\n \n1519686807571\n\n\n}\n\n\n\n\n\n\n\n\n\nFixed functions\n\u00b6\n\n\nFixed functions are expressed as strings and are useful to prevent Webpack conflicts and Typescript errors (eg. \nrequire()\n being converted to \n__webpack_require__\n)\n\n\n\n\nModule source code\n\n\nconsole\n.\nlog\n(\n`Here's some info about the server:`\n,\n \n$\n(\n$\n(\n`\n\n\n  const os = require('os')\n\n\n  return {\n\n\n    platform: os.platform(),\n\n\n    uptime: os.uptime(),\n\n\n  }\n\n\n`\n)))\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nconsole\n.\nlog\n(\n`Here's some info about the server:`\n,\n \n{\n\n  \nplatform\n:\n \n'xx'\n,\n\n  \nuptime\n:\n \n1.00\n,\n\n\n})\n\n\n\n\n\n\n\n\n\nReturning values\n\u00b6\n\n\nObjects\n\u00b6\n\n\nInstead of creating a function and returning a value, you can directly use objects, strings and numbers\n\n\n\n\nModule source code\n\n\nlet\n \ndata\n \n=\n \n$\n({\n\n  \ntime\n:\n \n+\nnew\n \nDate\n()\n\n\n})\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \ndata\n \n=\n \n{\n\n  \ntime\n:\n \n1519686807571\n\n\n}\n\n\n\n\n\n\n\n\n\nStrings & numbers\n\u00b6\n\n\n\n\nModule source code\n\n\nlet\n \nstring\n \n=\n \n$\n(\n\"test\"\n)\n\n\nlet\n \ntime\n \n=\n \n$\n(\n+\nnew\n \nDate\n())\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \nstring\n \n=\n \n\"test\"\n\n\nlet\n \ntime\n \n=\n \n1519686807571\n\n\n\n\n\n\n\n\n\nExample scripts\n\u00b6\n\n\nRun shell commands\n\u00b6\n\n\n\n\nModule source code\n\n\nconsole\n.\nlog\n(\n$\n(\nshell\n.\nexec\n(\n'echo Hello from the command line!'\n))",
+            "title": "Server-side execution"
+        },
+        {
+            "location": "/inject/modules/server-side/#example",
+            "text": "In the below example  Lodash  is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.   Module source code  let   activeUser   =   $ ( _ . find ([ \n   {   'user' :   'barney' ,    'age' :   36 ,   'active' :   true   }, \n   {   'user' :   'fred' ,      'age' :   40 ,   'active' :   false   }, \n   {   'user' :   'pebbles' ,   'age' :   1 ,    'active' :   true   }  ],   'active' ))  console . log ( activeUser )  let   randomNumber   =   $ ( _ . random ( 100 ))     Parsed module output  let   activeUser   =   {   'user' :   'barney' ,    'age' :   36 ,   'active' :   true   }  console . log ( activeUser )  let   randomNumber   =   46",
+            "title": "Example"
+        },
+        {
+            "location": "/inject/modules/server-side/#use-cases",
+            "text": "Minimize network traffic between the server and client  Large libraries don't need to be sent to the client  CPU intensive calculations can be performed on the server    Perform web requests without worrying about CORS  Randomize the modules actions to prevent reverse-engineering  Run shell commands on the server",
+            "title": "Use cases"
+        },
+        {
+            "location": "/inject/modules/server-side/#is-it-secure",
+            "text": "Yes. The only way for server-side code to be executed is by placing it in the modules  bundle.js . Code cannot be changed at processing time.",
+            "title": "Is it secure?"
+        },
+        {
+            "location": "/inject/modules/server-side/#executing-methods",
+            "text": "",
+            "title": "Executing methods"
+        },
+        {
+            "location": "/inject/modules/server-side/#dynamic-functions",
+            "text": "Dynamic functions are expressed as normal javascript functions, they are evaluated in the same process as the server (and have access to all the same variables)   Module source code  let   data   =   $ (()   =>   { \n   return   { \n     time :   + new   Date () \n   }  })     Parsed module output  let   data   =   { \n   time :   1519686807571  }",
+            "title": "Dynamic functions"
+        },
+        {
+            "location": "/inject/modules/server-side/#fixed-functions",
+            "text": "Fixed functions are expressed as strings and are useful to prevent Webpack conflicts and Typescript errors (eg.  require()  being converted to  __webpack_require__ )   Module source code  console . log ( `Here's some info about the server:` ,   $ ( $ ( `    const os = require('os')    return {      platform: os.platform(),      uptime: os.uptime(),    }  ` )))     Parsed module output  console . log ( `Here's some info about the server:` ,   { \n   platform :   'xx' , \n   uptime :   1.00 ,  })",
+            "title": "Fixed functions"
+        },
+        {
+            "location": "/inject/modules/server-side/#returning-values",
+            "text": "",
+            "title": "Returning values"
+        },
+        {
+            "location": "/inject/modules/server-side/#objects",
+            "text": "Instead of creating a function and returning a value, you can directly use objects, strings and numbers   Module source code  let   data   =   $ ({ \n   time :   + new   Date ()  })     Parsed module output  let   data   =   { \n   time :   1519686807571  }",
+            "title": "Objects"
+        },
+        {
+            "location": "/inject/modules/server-side/#strings-numbers",
+            "text": "Module source code  let   string   =   $ ( \"test\" )  let   time   =   $ ( + new   Date ())     Parsed module output  let   string   =   \"test\"  let   time   =   1519686807571",
+            "title": "Strings &amp; numbers"
+        },
+        {
+            "location": "/inject/modules/server-side/#example-scripts",
+            "text": "",
+            "title": "Example scripts"
+        },
+        {
+            "location": "/inject/modules/server-side/#run-shell-commands",
+            "text": "Module source code  console . log ( $ ( shell . exec ( 'echo Hello from the command line!' ))",
+            "title": "Run shell commands"
+        },
+        {
             "location": "/demos/interface/",
             "text": "Below are some recordings of Injectify in action.\n\n\nVirtual client tabs\nConsole replication\nConsole data types\nEditor module intellisense\nEditor intellisense\nLive updates\nTab manipulation",
             "title": "Interface demos"

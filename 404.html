@@ -1,3 +1,5 @@
+---
+---
 
 
 
@@ -725,6 +727,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/inject/modules/server-side/" title="Server-side execution" class="md-nav__link">
+      Server-side execution
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -783,6 +797,13 @@
             <article class="md-content__inner md-typeset">
               
   <h1>404 - Not found</h1>
+  
+    <iframe
+      srcdoc="<style>body{background:#303030;margin:0;font-family:Roboto,Helvetica,Arial,sans-serif;overflow:hidden;display:flex;flex-direction:column;height:100%;width:100%}*{color:#fff;text-decoration:none}h1{background:#ff1959;font-size:1.3125rem;font-weight:500;line-height:64px;padding:0 20px;box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);margin:0}h1+ul{height:100%;padding:20px;overflow-y:auto;overflow-x:hidden}.folder>a:nth-child(1){height:15px;display:inline-block}.folder>a:nth-child(1):hover{text-decoration:underline;text-decoration-color:#ff1959}.file{position:relative;height:50px}.file a{position:absolute;display:inline-block;height:calc(100% - 20px);width:100%;font-size:1rem;font-weight:400;line-height:30px;padding:0 10px;padding-top:4px;margin:10px 0;transition:background-color .5s ease;color:#ff6892}.file:hover a{background-color:rgba(255,255,255,.1)}ul,ul.tree ul{list-style:none;margin:0;padding:0}li{display:block}ul ul{margin-left:10px}ul li{margin:0;padding:0 20px;color:#369;border-left:1px solid #ff1959}ul li:last-child{border-left:none}ul li:before{position:relative;height:28px;width:20px;color:#fff;border-bottom:1px solid #ff1959;content:&quot;&quot;;display:inline-block;left:-20px}ul li:last-child:before{border-left:1px solid #ff1959}</style><h1>Directory listing</h1><ul></ul><script>var c=document.getElementsByTagName(&quot;ul&quot;)[0];function escapeHtml(e){return e.replace(/&amp;/g,&quot;&amp;amp;&quot;).replace(/</g,&quot;&amp;lt;&quot;).replace(/>/g,&quot;&amp;gt;&quot;).replace(/&quot;/g,&quot;&amp;quot;&quot;).replace(/'/g,&quot;&amp;#039;&quot;)}for(var files=[{%! for url in site.static_files %}'{{! url.path | replace: &quot;'&quot;, &quot;'&quot; }}',{%! endfor %}],i=0;i<files.length;i++){var url=files[i].split(&quot;/&quot;).slice(1);console.group(files[i]);for(var x=0;x<url.length;x++){var file=url[x];if(file)for(var element=null,parent=null,y=0;y<x+1;y++){var el=document.querySelector(&quot;[ref=&quot;+JSON.stringify(y+&quot;-&quot;+url[y])+&quot;]&quot;);if(!el){var type=&quot;folder&quot;;url[y].indexOf(&quot;.&quot;)>-1&amp;&amp;(type=&quot;file&quot;),el=document.createElement(&quot;li&quot;);var a=document.createElement(&quot;a&quot;);a.target=&quot;_blank&quot;;a.innerHTML=escapeHtml(url[y]),a.href=url.slice(0,x+1).join(&quot;/&quot;),el.appendChild(a),el.setAttribute(&quot;ref&quot;,y+&quot;-&quot;+url[y]),el.setAttribute(&quot;level&quot;,y),el.setAttribute(&quot;class&quot;,type),parent?parent.appendChild(el):c.appendChild(el)}parent=el}}console.groupEnd(files[i])}document.title=document.querySelector(&quot;h1&quot;).innerHTML+=&quot; (&quot;+files.length+&quot; items)&quot;</script>"
+      style="width: 100%; height: 400px; border: none"
+    >
+    </iframe>
+  
 
               
                 

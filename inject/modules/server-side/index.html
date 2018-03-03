@@ -36,7 +36,7 @@
     
     
       
-        <title>Module API - Injectify Documentation</title>
+        <title>Server-side execution - Injectify Documentation</title>
       
     
     
@@ -74,7 +74,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#overview" tabindex="1" class="md-skip">
+      <a href="#example" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -100,7 +100,7 @@
                 Injectify Documentation
               </span>
               <span class="md-header-nav__topic">
-                Module API
+                Server-side execution
               </span>
             
           
@@ -727,6 +727,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../api/" title="Module API" class="md-nav__link">
+      Module API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -736,11 +748,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Module API
+        Server-side execution
       </label>
     
-    <a href="./" title="Module API" class="md-nav__link md-nav__link--active">
-      Module API
+    <a href="./" title="Server-side execution" class="md-nav__link md-nav__link--active">
+      Server-side execution
     </a>
     
       
@@ -752,44 +764,91 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
+  <a href="#use-cases" title="Use cases" class="md-nav__link">
+    Use cases
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
+  <a href="#is-it-secure" title="Is it secure?" class="md-nav__link">
+    Is it secure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-methods" title="Executing methods" class="md-nav__link">
+    Executing methods
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#module-parameters" title="Module parameters" class="md-nav__link">
-    Module parameters
+  <a href="#dynamic-functions" title="Dynamic functions" class="md-nav__link">
+    Dynamic functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#module-state" title="Module state" class="md-nav__link">
-    Module state
+  <a href="#fixed-functions" title="Fixed functions" class="md-nav__link">
+    Fixed functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#module-promise-callback" title="Module Promise callback" class="md-nav__link">
-    Module Promise callback
+  <a href="#returning-values" title="Returning values" class="md-nav__link">
+    Returning values
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objects" title="Objects" class="md-nav__link">
+    Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings-numbers" title="Strings &amp; numbers" class="md-nav__link">
+    Strings &amp; numbers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scripts" title="Example scripts" class="md-nav__link">
+    Example scripts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-shell-commands" title="Run shell commands" class="md-nav__link">
+    Run shell commands
   </a>
   
 </li>
@@ -805,18 +864,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../server-side/" title="Server-side execution" class="md-nav__link">
-      Server-side execution
-    </a>
   </li>
 
         
@@ -885,44 +932,91 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
+  <a href="#use-cases" title="Use cases" class="md-nav__link">
+    Use cases
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" title="Examples" class="md-nav__link">
-    Examples
+  <a href="#is-it-secure" title="Is it secure?" class="md-nav__link">
+    Is it secure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-methods" title="Executing methods" class="md-nav__link">
+    Executing methods
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#module-parameters" title="Module parameters" class="md-nav__link">
-    Module parameters
+  <a href="#dynamic-functions" title="Dynamic functions" class="md-nav__link">
+    Dynamic functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#module-state" title="Module state" class="md-nav__link">
-    Module state
+  <a href="#fixed-functions" title="Fixed functions" class="md-nav__link">
+    Fixed functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#module-promise-callback" title="Module Promise callback" class="md-nav__link">
-    Module Promise callback
+  <a href="#returning-values" title="Returning values" class="md-nav__link">
+    Returning values
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objects" title="Objects" class="md-nav__link">
+    Objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings-numbers" title="Strings &amp; numbers" class="md-nav__link">
+    Strings &amp; numbers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scripts" title="Example scripts" class="md-nav__link">
+    Example scripts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-shell-commands" title="Run shell commands" class="md-nav__link">
+    Run shell commands
   </a>
   
 </li>
@@ -946,129 +1040,139 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/injectify/docs/edit/master/docs/inject/modules/api.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/injectify/docs/edit/master/docs/inject/modules/server-side.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Module API</h1>
+                  <h1>Server-side execution</h1>
                 
                 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The Module API allows you to pass parameters, callback functions and utilize the module's global state API.</p>
+<p>Server-side execution allows you to run NodeJS snippets directly in your modules javascript file, similiar to PHP.</p>
 </div>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Every time a module is called a new <code class="codehilite"><span class="k">Module</span></code> object is created. This object gives access to the following:</p>
-<details open="open"><summary>Getters</summary><ul><li>The modules current global state</li><li>The parameters passed to the module.</li><li>The name the module was called under.</li><li>A unique token assigned for the call.</li></ul></details><details open="open"><summary>Setters</summary><ul><li>Resolve / reject the modules Promise callback.</li><li>Update the modules global state</li></ul></details><h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<details class="info" open="open"><summary>Module typings</summary><p>Typescript typings for the <code class="codehilite"><span class="k">Module</span></code> object:
-<div class="codehilite"><pre><span></span><span class="nx">Module</span><span class="o">:</span> <span class="p">{</span>
-  <span class="cm">/**</span>
-<span class="cm">   * The name the module was called as</span>
-<span class="cm">   */</span>
-  <span class="nx">name</span>: <span class="kt">string</span>
-  <span class="cm">/**</span>
-<span class="cm">   * The parameters passed to the module</span>
-<span class="cm">   */</span>
-  <span class="nx">params</span>: <span class="kt">any</span>
-  <span class="cm">/**</span>
-<span class="cm">   * Modules global state, persistent until the page is reloaded</span>
-<span class="cm">   */</span>
-  <span class="nx">state</span>: <span class="kt">any</span>
-  <span class="cm">/**</span>
-<span class="cm">   * Updates the module&#39;s global state</span>
-<span class="cm">   * @param newState An object containing the new state</span>
-<span class="cm">   */</span>
-  <span class="nx">setState</span>: <span class="kt">Function</span>
-  <span class="cm">/**</span>
-<span class="cm">   * A unique token generated every time a module is called</span>
-<span class="cm">   */</span>
-  <span class="nx">token</span>: <span class="kt">string</span>
-  <span class="cm">/**</span>
-<span class="cm">   * Resolve the modules calling Promise</span>
-<span class="cm">   */</span>
-  <span class="nx">resolve</span><span class="p">(</span><span class="nx">data?</span>: <span class="kt">any</span><span class="p">)</span><span class="o">:</span> <span class="nb">Function</span>
-  <span class="cm">/**</span>
-<span class="cm">   * Reject the modules calling Promise</span>
-<span class="cm">   */</span>
-  <span class="nx">reject</span><span class="p">(</span><span class="nx">data?</span>: <span class="kt">any</span><span class="p">)</span><span class="o">:</span> <span class="nb">Function</span>
-  <span class="cm">/**</span>
-<span class="cm">   * Whether or not the modules callback has been resolved</span>
-<span class="cm">   */</span>
-  <span class="nx">resolved</span>: <span class="kt">boolean</span>
-<span class="p">}</span>
-</pre></div></p></details><h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<h3 id="module-parameters">Module parameters<a class="headerlink" href="#module-parameters" title="Permanent link">&para;</a></h3>
-<p>The parameters allows you pass data to the module:</p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>In the below example <a href="https://lodash.com">Lodash</a> is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.</p>
 <div class="admonition example">
-<p class="admonition-title">Calling the module</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Example 1</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="s1">&#39;example string&#39;</span><span class="p">)</span>
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">activeUser</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">_</span><span class="p">.</span><span class="nx">find</span><span class="p">([</span>
+  <span class="p">{</span> <span class="s1">&#39;user&#39;</span><span class="o">:</span> <span class="s1">&#39;barney&#39;</span><span class="p">,</span>  <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">36</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="s1">&#39;user&#39;</span><span class="o">:</span> <span class="s1">&#39;fred&#39;</span><span class="p">,</span>    <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">40</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="o">:</span> <span class="kc">false</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="s1">&#39;user&#39;</span><span class="o">:</span> <span class="s1">&#39;pebbles&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>  <span class="s1">&#39;active&#39;</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+<span class="p">],</span> <span class="s1">&#39;active&#39;</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">activeUser</span><span class="p">)</span>
 
-<span class="c1">// Example 2</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">example</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">doIt</span><span class="o">:</span> <span class="kc">true</span> <span class="p">})</span>
+<span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">_</span><span class="p">.</span><span class="nx">random</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
 </pre></div>
 
 </div>
 <div class="admonition example">
-<p class="admonition-title">Module source code</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Example 1</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Module</span><span class="p">.</span><span class="nx">params</span><span class="p">)</span> <span class="c1">// &quot;example string&quot;</span>
+<p class="admonition-title">Parsed module output</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">activeUser</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;user&#39;</span><span class="o">:</span> <span class="s1">&#39;barney&#39;</span><span class="p">,</span>  <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">36</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">activeUser</span><span class="p">)</span>
 
-<span class="c1">// Example 2</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Module</span><span class="p">.</span><span class="nx">params</span><span class="p">)</span> <span class="c1">// { example: 1, doIt: true }</span>
+<span class="kd">let</span> <span class="nx">randomNumber</span> <span class="o">=</span> <span class="mi">46</span>
+</pre></div>
+
+</div>
+<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Minimize network traffic between the server and client<ul>
+<li>Large libraries don't need to be sent to the client</li>
+<li>CPU intensive calculations can be performed on the server</li>
+</ul>
+</li>
+<li>Perform web requests without worrying about CORS</li>
+<li>Randomize the modules actions to prevent reverse-engineering</li>
+<li>Run shell commands on the server</li>
+</ul>
+<h2 id="is-it-secure">Is it secure?<a class="headerlink" href="#is-it-secure" title="Permanent link">&para;</a></h2>
+<p>Yes. The only way for server-side code to be executed is by placing it in the modules <code class="codehilite">bundle.js</code>. Code cannot be changed at processing time.</p>
+<h2 id="executing-methods">Executing methods<a class="headerlink" href="#executing-methods" title="Permanent link">&para;</a></h2>
+<h3 id="dynamic-functions">Dynamic functions<a class="headerlink" href="#dynamic-functions" title="Permanent link">&para;</a></h3>
+<p>Dynamic functions are expressed as normal javascript functions, they are evaluated in the same process as the server (and have access to all the same variables)</p>
+<div class="admonition example">
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">time</span><span class="o">:</span> <span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</pre></div>
+
+</div>
+<div class="admonition example">
+<p class="admonition-title">Parsed module output</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">time</span><span class="o">:</span> <span class="mi">1519686807571</span>
+<span class="p">}</span>
 </pre></div>
 
 </div>
 <hr />
-<h3 id="module-state">Module state<a class="headerlink" href="#module-state" title="Permanent link">&para;</a></h3>
-<p>The state allows you to globally store data across module calls:</p>
+<h3 id="fixed-functions">Fixed functions<a class="headerlink" href="#fixed-functions" title="Permanent link">&para;</a></h3>
+<p>Fixed functions are expressed as strings and are useful to prevent Webpack conflicts and Typescript errors (eg. <code class="codehilite">require()</code> being converted to <code class="codehilite">__webpack_require__</code>)</p>
 <div class="admonition example">
-<p class="admonition-title">Calling the module</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Example 1</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">)</span>
-
-<span class="c1">// Example 2</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">)</span>
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Here&#39;s some info about the server:`</span><span class="p">,</span> <span class="nx">$</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="sb">`</span>
+<span class="sb">  const os = require(&#39;os&#39;)</span>
+<span class="sb">  return {</span>
+<span class="sb">    platform: os.platform(),</span>
+<span class="sb">    uptime: os.uptime(),</span>
+<span class="sb">  }</span>
+<span class="sb">`</span><span class="p">)))</span>
 </pre></div>
 
 </div>
 <div class="admonition example">
-<p class="admonition-title">Module source code</p>
-<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Module</span><span class="p">.</span><span class="nx">state</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">Module</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Set the state to </span><span class="si">${</span><span class="nx">Module</span><span class="p">.</span><span class="nx">state</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Module state = </span><span class="si">${</span><span class="nx">Module</span><span class="p">.</span><span class="nx">state</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="c1">// Example 1: Set the state to 123</span>
-<span class="c1">// Example 2: Module state = 123</span>
+<p class="admonition-title">Parsed module output</p>
+<div class="codehilite"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Here&#39;s some info about the server:`</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s1">&#39;xx&#39;</span><span class="p">,</span>
+  <span class="nx">uptime</span><span class="o">:</span> <span class="mf">1.00</span><span class="p">,</span>
+<span class="p">})</span>
 </pre></div>
 
 </div>
 <hr />
-<h3 id="module-promise-callback">Module Promise callback<a class="headerlink" href="#module-promise-callback" title="Permanent link">&para;</a></h3>
-<p>The callback allows your module to sync / async return data to it's calling Promise.</p>
+<h3 id="returning-values">Returning values<a class="headerlink" href="#returning-values" title="Permanent link">&para;</a></h3>
+<h4 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h4>
+<p>Instead of creating a function and returning a value, you can directly use objects, strings and numbers</p>
 <div class="admonition example">
-<p class="admonition-title">Calling the module</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Example 1</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
-<span class="p">})</span> <span class="c1">// &quot;Returned data&quot;</span>
-
-<span class="c1">// Example 2</span>
-<span class="nx">injectify</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;example&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
-<span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-<span class="p">})</span>  <span class="c1">// &quot;My error&quot;</span>
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">$</span><span class="p">({</span>
+  <span class="nx">time</span><span class="o">:</span> <span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()</span>
+<span class="p">})</span>
 </pre></div>
 
 </div>
 <div class="admonition example">
-<p class="admonition-title">Module source code</p>
-<div class="codehilite"><pre><span></span><span class="c1">// Example 1</span>
-<span class="nx">Module</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;Returned data&#39;</span><span class="p">)</span>
+<p class="admonition-title">Parsed module output</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">time</span><span class="o">:</span> <span class="mi">1519686807571</span>
+<span class="p">}</span>
+</pre></div>
 
-<span class="c1">// Example 2</span>
-<span class="nx">Module</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="s1">&#39;My error&#39;</span><span class="p">)</span>
+</div>
+<hr />
+<h4 id="strings-numbers">Strings &amp; numbers<a class="headerlink" href="#strings-numbers" title="Permanent link">&para;</a></h4>
+<div class="admonition example">
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="kd">let</span> <span class="nx">time</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">())</span>
+</pre></div>
+
+</div>
+<div class="admonition example">
+<p class="admonition-title">Parsed module output</p>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span>
+<span class="kd">let</span> <span class="nx">time</span> <span class="o">=</span> <span class="mi">1519686807571</span>
+</pre></div>
+
+</div>
+<hr />
+<h2 id="example-scripts">Example scripts<a class="headerlink" href="#example-scripts" title="Permanent link">&para;</a></h2>
+<h3 id="run-shell-commands">Run shell commands<a class="headerlink" href="#run-shell-commands" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Module source code</p>
+<div class="codehilite"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">shell</span><span class="p">.</span><span class="nx">exec</span><span class="p">(</span><span class="s1">&#39;echo Hello from the command line!&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -1090,7 +1194,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../create/" title="Creating a module" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../api/" title="Module API" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1099,19 +1203,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Creating a module
+                Module API
               </span>
             </div>
           </a>
         
         
-          <a href="../server-side/" title="Server-side execution" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../demos/interface/" title="Interface demos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Server-side execution
+                Interface demos
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
