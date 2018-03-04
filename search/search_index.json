@@ -2,17 +2,17 @@
     "docs": [
         {
             "location": "/",
-            "text": "Perform advanced MiTM attacks on websites with ease.\n  \n\n\n\n\n\n\n  \n\n    \n\n      Test it out\n    \n\u00a0|\n    \n\n      Installation\n    \n\u00a0|\n    \n\n      Trello\n    \n\u00a0|\n    \n\n      Patreon\n    \n\n  \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n\n\n\n\n\n\n\nIntroduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code).\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n Create a reverse Javascript shell between the victim and the attacker.\n\n\n Records keystrokes and logs them to a database.\n\n\n Extract and log \nsaved passwords\n from the browser.",
+            "text": "Perform advanced MiTM attacks on websites with ease.\n  \n\n\n\n\n\n\n  \n\n    \n\n      Test it out\n    \n\u00a0|\n    \n\n      Installation\n    \n\u00a0|\n    \n\n      Trello\n    \n\u00a0|\n    \n\n      Patreon\n    \n\n  \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n  \n\n    \n\n  \n\n\n\n\n\n\n\n\nIntroduction\n\u00b6\n\n\nInjectify is a web based MiTM tool, similiar to \nBeEF\n (although completely unrelated in terms of source code). It uses modern web technologies such as ReactJS, Redux, Typescript and Webpack.\n\n\nWhat can it do?\n\u00b6\n\n\n\n\n \nCreate a reverse Javascript shell between the victim and the attacker.\n\n\n \nPageGhost - see what's on the victims screen and interact with it in realtime\n\n\n Highly integrated Module platform, with a high-level API\n\n\n Data extraction API - record custom data\n\n\n Extracts and logs saved passwords from the browser.",
             "title": "Introduction"
         },
         {
             "location": "/#introduction",
-            "text": "Injectify is a web based MiTM tool, similiar to  BeEF  (although completely unrelated in terms of source code).",
+            "text": "Injectify is a web based MiTM tool, similiar to  BeEF  (although completely unrelated in terms of source code). It uses modern web technologies such as ReactJS, Redux, Typescript and Webpack.",
             "title": "Introduction"
         },
         {
             "location": "/#what-can-it-do",
-            "text": "Create a reverse Javascript shell between the victim and the attacker.   Records keystrokes and logs them to a database.   Extract and log  saved passwords  from the browser.",
+            "text": "Create a reverse Javascript shell between the victim and the attacker.    PageGhost - see what's on the victims screen and interact with it in realtime   Highly integrated Module platform, with a high-level API   Data extraction API - record custom data   Extracts and logs saved passwords from the browser.",
             "title": "What can it do?"
         },
         {
@@ -66,24 +66,14 @@
             "title": "Linux"
         },
         {
-            "location": "/usage/payload-generator/",
+            "location": "/usage/console/",
             "text": "",
-            "title": "Generating JS payloads"
+            "title": "Console"
         },
         {
-            "location": "/usage/inject/",
+            "location": "/usage/data/",
             "text": "",
-            "title": "Hooking browsers"
-        },
-        {
-            "location": "/usage/passwords/",
-            "text": "",
-            "title": "Password extractor"
-        },
-        {
-            "location": "/usage/keylogger/",
-            "text": "",
-            "title": "Keylogger"
+            "title": "Data storage"
         },
         {
             "location": "/usage/project-config/roles/",
@@ -126,24 +116,14 @@
             "title": "Accessing the API"
         },
         {
-            "location": "/usage/payload-generator/",
+            "location": "/usage/console/",
             "text": "",
-            "title": "Generating JS payloads"
+            "title": "Console"
         },
         {
-            "location": "/usage/inject/",
+            "location": "/usage/data/",
             "text": "",
-            "title": "Hooking browsers"
-        },
-        {
-            "location": "/usage/passwords/",
-            "text": "",
-            "title": "Password extractor"
-        },
-        {
-            "location": "/usage/keylogger/",
-            "text": "",
-            "title": "Keylogger"
+            "title": "Data storage"
         },
         {
             "location": "/usage/project-config/roles/",
@@ -186,104 +166,174 @@
             "title": "Accessing the API"
         },
         {
-            "location": "/inject/modules/create/",
+            "location": "/modules/",
+            "text": "What are modules\n\u00b6\n\n\nDescription\n\u00b6\n\n\nModules are Javascript files that can be dynamically loaded from the server and executed on the client - with features such as parameters, callbacks and Typescript typings support.\n\n\nExample\nBy executing \ninjectify\n.\nmodule\n(\n'example'\n,\n \n'test'\n)\n, a request will be sent to load a module named \nexample\n with the parameters of \ntest\n.\nThis module is then parsed by the server and if the module contains server-side snippets, the server will execute them. Once complete, the server will send the module over to the client where it will be executed.\nThe module can run a variety of server-side snippets, including:\nShell commands\nFunctions - \nrequire()\n supported\nCalculations\nTools\n\u00b6\n\n\nWebpack\n\u00b6\n\n\nAll modules are preprocessed by \nwebpack\n into a single \nbundle.js\n. Webpack allows you to import NPM modules, create modular scripts and include local resources.\n\n\nWebpack imports\nTypescript (Optional)\n\u00b6\n\n\nYou can use Typescript to write next generation ES7 and have it compile to older-browser compatible javascript. All the necessary typings have been created & documented for you, so you can fully utilize the Injectify API\n\n\nVS Code intellisense\nFeatures\n\u00b6\n\n\nDeveloper-first experience\n\u00b6\n\n\nInjectify was built to be super easy to customize hence the reason to use NodeJS (instead of a higher-level langauge such as Python, Elixir or Java).\n\n\nThe developer experience whilst developing modules is performant and easy to debug, all the below features are available when the client connects via debug mode\n\n\n\n\nSource code is un-minfified - viewable in the DevTools sources pane\n\n\nVerbose console output - module calls, stack traces etc.\n\n\nHot reloading - each time you make a change, the core is reloaded without the page reloading\n\n\nWebsocket inspection - request JSON inspectable\n\n\n\n\nDevtools enhancements",
+            "title": "What are modules?"
+        },
+        {
+            "location": "/modules/#what-are-modules",
             "text": "",
+            "title": "What are modules"
+        },
+        {
+            "location": "/modules/#description",
+            "text": "Modules are Javascript files that can be dynamically loaded from the server and executed on the client - with features such as parameters, callbacks and Typescript typings support.  Example By executing  injectify . module ( 'example' ,   'test' ) , a request will be sent to load a module named  example  with the parameters of  test . This module is then parsed by the server and if the module contains server-side snippets, the server will execute them. Once complete, the server will send the module over to the client where it will be executed. The module can run a variety of server-side snippets, including: Shell commands Functions -  require()  supported Calculations",
+            "title": "Description"
+        },
+        {
+            "location": "/modules/#tools",
+            "text": "",
+            "title": "Tools"
+        },
+        {
+            "location": "/modules/#webpack",
+            "text": "All modules are preprocessed by  webpack  into a single  bundle.js . Webpack allows you to import NPM modules, create modular scripts and include local resources.  Webpack imports",
+            "title": "Webpack"
+        },
+        {
+            "location": "/modules/#typescript-optional",
+            "text": "You can use Typescript to write next generation ES7 and have it compile to older-browser compatible javascript. All the necessary typings have been created & documented for you, so you can fully utilize the Injectify API  VS Code intellisense",
+            "title": "Typescript (Optional)"
+        },
+        {
+            "location": "/modules/#features",
+            "text": "",
+            "title": "Features"
+        },
+        {
+            "location": "/modules/#developer-first-experience",
+            "text": "Injectify was built to be super easy to customize hence the reason to use NodeJS (instead of a higher-level langauge such as Python, Elixir or Java).  The developer experience whilst developing modules is performant and easy to debug, all the below features are available when the client connects via debug mode   Source code is un-minfified - viewable in the DevTools sources pane  Verbose console output - module calls, stack traces etc.  Hot reloading - each time you make a change, the core is reloaded without the page reloading  Websocket inspection - request JSON inspectable   Devtools enhancements",
+            "title": "Developer-first experience"
+        },
+        {
+            "location": "/modules/create/",
+            "text": "Creating a module\n\u00b6\n\n\nCreating a module is easy and w",
             "title": "Creating a module"
         },
         {
-            "location": "/inject/modules/api/",
+            "location": "/modules/create/#creating-a-module",
+            "text": "Creating a module is easy and w",
+            "title": "Creating a module"
+        },
+        {
+            "location": "/modules/api/",
             "text": "Tip\n\n\nThe Module API allows you to pass parameters, callback functions and utilize the module's global state API.\n\n\n\n\nOverview\n\u00b6\n\n\nEvery time a module is called a new \nModule\n object is created. This object gives access to the following:\n\n\nGetters\nThe modules current global state\nThe parameters passed to the module.\nThe name the module was called under.\nA unique token assigned for the call.\nSetters\nResolve / reject the modules Promise callback.\nUpdate the modules global state\nUsage\n\u00b6\n\n\nModule typings\nTypescript typings for the \nModule\n object:\n\nModule\n:\n \n{\n\n  \n/**\n\n\n   * The name the module was called as\n\n\n   */\n\n  \nname\n: \nstring\n\n  \n/**\n\n\n   * The parameters passed to the module\n\n\n   */\n\n  \nparams\n: \nany\n\n  \n/**\n\n\n   * Modules global state, persistent until the page is reloaded\n\n\n   */\n\n  \nstate\n: \nany\n\n  \n/**\n\n\n   * Updates the module's global state\n\n\n   * @param newState An object containing the new state\n\n\n   */\n\n  \nsetState\n: \nFunction\n\n  \n/**\n\n\n   * A unique token generated every time a module is called\n\n\n   */\n\n  \ntoken\n: \nstring\n\n  \n/**\n\n\n   * Resolve the modules calling Promise\n\n\n   */\n\n  \nresolve\n(\ndata?\n: \nany\n)\n:\n \nFunction\n\n  \n/**\n\n\n   * Reject the modules calling Promise\n\n\n   */\n\n  \nreject\n(\ndata?\n: \nany\n)\n:\n \nFunction\n\n  \n/**\n\n\n   * Whether or not the modules callback has been resolved\n\n\n   */\n\n  \nresolved\n: \nboolean\n\n\n}\n\n\nExamples\n\u00b6\n\n\nModule parameters\n\u00b6\n\n\nThe parameters allows you pass data to the module:\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n,\n \n'example string'\n)\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n,\n \n{\n \nexample\n:\n \n1\n,\n \ndoIt\n:\n \ntrue\n \n})\n\n\n\n\n\n\n\n\n\nModule source code\n\n\n// Example 1\n\n\nconsole\n.\nlog\n(\nModule\n.\nparams\n)\n \n// \"example string\"\n\n\n\n// Example 2\n\n\nconsole\n.\nlog\n(\nModule\n.\nparams\n)\n \n// { example: 1, doIt: true }\n\n\n\n\n\n\n\n\n\nModule state\n\u00b6\n\n\nThe state allows you to globally store data across module calls:\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n)\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n)\n\n\n\n\n\n\n\n\n\nModule source code\n\n\nif\n \n(\n!\nModule\n.\nstate\n)\n \n{\n\n  \nModule\n.\nsetState\n(\n123\n)\n\n  \nconsole\n.\nlog\n(\n`Set the state to \n${\nModule\n.\nstate\n}\n`\n)\n\n\n}\n \nelse\n \n{\n\n  \nconsole\n.\nlog\n(\n`Module state = \n${\nModule\n.\nstate\n}\n`\n)\n\n\n}\n\n\n\n// Example 1: Set the state to 123\n\n\n// Example 2: Module state = 123\n\n\n\n\n\n\n\n\n\nModule Promise callback\n\u00b6\n\n\nThe callback allows your module to sync / async return data to it's calling Promise.\n\n\n\n\nCalling the module\n\n\n// Example 1\n\n\ninjectify\n.\nmodule\n(\n'example'\n).\nthen\n(\ndata\n \n=>\n \n{\n\n  \nconsole\n.\nlog\n(\ndata\n)\n\n\n})\n \n// \"Returned data\"\n\n\n\n// Example 2\n\n\ninjectify\n.\nmodule\n(\n'example'\n).\nthen\n(\ndata\n \n=>\n \n{\n\n\n}).\ncatch\n(\nerr\n \n=>\n \n{\n\n  \nconsole\n.\nlog\n(\nerr\n)\n\n\n})\n  \n// \"My error\"\n\n\n\n\n\n\n\n\n\nModule source code\n\n\n// Example 1\n\n\nModule\n.\nresolve\n(\n'Returned data'\n)\n\n\n\n// Example 2\n\n\nModule\n.\nreject\n(\n'My error'\n)",
             "title": "Module API"
         },
         {
-            "location": "/inject/modules/api/#overview",
+            "location": "/modules/api/#overview",
             "text": "Every time a module is called a new  Module  object is created. This object gives access to the following:  Getters The modules current global state The parameters passed to the module. The name the module was called under. A unique token assigned for the call. Setters Resolve / reject the modules Promise callback. Update the modules global state",
             "title": "Overview"
         },
         {
-            "location": "/inject/modules/api/#usage",
+            "location": "/modules/api/#usage",
             "text": "Module typings Typescript typings for the  Module  object: Module :   { \n   /**     * The name the module was called as     */ \n   name :  string \n   /**     * The parameters passed to the module     */ \n   params :  any \n   /**     * Modules global state, persistent until the page is reloaded     */ \n   state :  any \n   /**     * Updates the module's global state     * @param newState An object containing the new state     */ \n   setState :  Function \n   /**     * A unique token generated every time a module is called     */ \n   token :  string \n   /**     * Resolve the modules calling Promise     */ \n   resolve ( data? :  any ) :   Function \n   /**     * Reject the modules calling Promise     */ \n   reject ( data? :  any ) :   Function \n   /**     * Whether or not the modules callback has been resolved     */ \n   resolved :  boolean  }",
             "title": "Usage"
         },
         {
-            "location": "/inject/modules/api/#examples",
+            "location": "/modules/api/#examples",
             "text": "",
             "title": "Examples"
         },
         {
-            "location": "/inject/modules/api/#module-parameters",
+            "location": "/modules/api/#module-parameters",
             "text": "The parameters allows you pass data to the module:   Calling the module  // Example 1  injectify . module ( 'example' ,   'example string' )  // Example 2  injectify . module ( 'example' ,   {   example :   1 ,   doIt :   true   })     Module source code  // Example 1  console . log ( Module . params )   // \"example string\"  // Example 2  console . log ( Module . params )   // { example: 1, doIt: true }",
             "title": "Module parameters"
         },
         {
-            "location": "/inject/modules/api/#module-state",
+            "location": "/modules/api/#module-state",
             "text": "The state allows you to globally store data across module calls:   Calling the module  // Example 1  injectify . module ( 'example' )  // Example 2  injectify . module ( 'example' )     Module source code  if   ( ! Module . state )   { \n   Module . setState ( 123 ) \n   console . log ( `Set the state to  ${ Module . state } ` )  }   else   { \n   console . log ( `Module state =  ${ Module . state } ` )  }  // Example 1: Set the state to 123  // Example 2: Module state = 123",
             "title": "Module state"
         },
         {
-            "location": "/inject/modules/api/#module-promise-callback",
+            "location": "/modules/api/#module-promise-callback",
             "text": "The callback allows your module to sync / async return data to it's calling Promise.   Calling the module  // Example 1  injectify . module ( 'example' ). then ( data   =>   { \n   console . log ( data )  })   // \"Returned data\"  // Example 2  injectify . module ( 'example' ). then ( data   =>   {  }). catch ( err   =>   { \n   console . log ( err )  })    // \"My error\"     Module source code  // Example 1  Module . resolve ( 'Returned data' )  // Example 2  Module . reject ( 'My error' )",
             "title": "Module Promise callback"
         },
         {
-            "location": "/inject/modules/server-side/",
-            "text": "Tip\n\n\nServer-side execution allows you to run NodeJS snippets directly in your modules javascript file, similiar to PHP.\n\n\n\n\nExample\n\u00b6\n\n\nIn the below example \nLodash\n is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.\n\n\n\n\nModule source code\n\n\nlet\n \nactiveUser\n \n=\n \n$\n(\n_\n.\nfind\n([\n\n  \n{\n \n'user'\n:\n \n'barney'\n,\n  \n'age'\n:\n \n36\n,\n \n'active'\n:\n \ntrue\n \n},\n\n  \n{\n \n'user'\n:\n \n'fred'\n,\n    \n'age'\n:\n \n40\n,\n \n'active'\n:\n \nfalse\n \n},\n\n  \n{\n \n'user'\n:\n \n'pebbles'\n,\n \n'age'\n:\n \n1\n,\n  \n'active'\n:\n \ntrue\n \n}\n\n\n],\n \n'active'\n))\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n$\n(\n_\n.\nrandom\n(\n100\n))\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \nactiveUser\n \n=\n \n{\n \n'user'\n:\n \n'barney'\n,\n  \n'age'\n:\n \n36\n,\n \n'active'\n:\n \ntrue\n \n}\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n46\n\n\n\n\n\n\n\nUse cases\n\u00b6\n\n\n\n\nMinimize network traffic between the server and client\n\n\nLarge libraries don't need to be sent to the client\n\n\nCPU intensive calculations can be performed on the server\n\n\n\n\n\n\nPerform web requests without worrying about CORS\n\n\nRandomize the modules actions to prevent reverse-engineering\n\n\nRun shell commands on the server\n\n\n\n\nIs it secure?\n\u00b6\n\n\nYes. The only way for server-side code to be executed is by placing it in the modules \nbundle.js\n. Code cannot be changed at processing time.\n\n\nExecuting methods\n\u00b6\n\n\nDynamic functions\n\u00b6\n\n\nDynamic functions are expressed as normal javascript functions, they are evaluated in the same process as the server (and have access to all the same variables)\n\n\n\n\nModule source code\n\n\nlet\n \ndata\n \n=\n \n$\n(()\n \n=>\n \n{\n\n  \nreturn\n \n{\n\n    \ntime\n:\n \n+\nnew\n \nDate\n()\n\n  \n}\n\n\n})\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \ndata\n \n=\n \n{\n\n  \ntime\n:\n \n1519686807571\n\n\n}\n\n\n\n\n\n\n\n\n\nFixed functions\n\u00b6\n\n\nFixed functions are expressed as strings and are useful to prevent Webpack conflicts and Typescript errors (eg. \nrequire()\n being converted to \n__webpack_require__\n)\n\n\n\n\nModule source code\n\n\nconsole\n.\nlog\n(\n`Here's some info about the server:`\n,\n \n$\n(\n$\n(\n`\n\n\n  const os = require('os')\n\n\n  return {\n\n\n    platform: os.platform(),\n\n\n    uptime: os.uptime(),\n\n\n  }\n\n\n`\n)))\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nconsole\n.\nlog\n(\n`Here's some info about the server:`\n,\n \n{\n\n  \nplatform\n:\n \n'xx'\n,\n\n  \nuptime\n:\n \n1.00\n,\n\n\n})\n\n\n\n\n\n\n\n\n\nReturning values\n\u00b6\n\n\nObjects\n\u00b6\n\n\nInstead of creating a function and returning a value, you can directly use objects, strings and numbers\n\n\n\n\nModule source code\n\n\nlet\n \ndata\n \n=\n \n$\n({\n\n  \ntime\n:\n \n+\nnew\n \nDate\n()\n\n\n})\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \ndata\n \n=\n \n{\n\n  \ntime\n:\n \n1519686807571\n\n\n}\n\n\n\n\n\n\n\n\n\nStrings & numbers\n\u00b6\n\n\n\n\nModule source code\n\n\nlet\n \nstring\n \n=\n \n$\n(\n\"test\"\n)\n\n\nlet\n \ntime\n \n=\n \n$\n(\n+\nnew\n \nDate\n())\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nlet\n \nstring\n \n=\n \n\"test\"\n\n\nlet\n \ntime\n \n=\n \n1519686807571\n\n\n\n\n\n\n\n\n\nExample scripts\n\u00b6\n\n\nRun shell commands\n\u00b6\n\n\n\n\nModule source code\n\n\nconsole\n.\nlog\n(\n$\n(\nshell\n.\nexec\n(\n'echo Hello from the command line!'\n))",
-            "title": "Server-side execution"
+            "location": "/modules/server-side/",
+            "text": "Server-side snippets\n\u00b6\n\n\n\n\nTip\n\n\nServer-side execution allows you to run NodeJS snippets directly in your modules javascript file, similiar to PHP.\n\n\n\n\nExample\n\u00b6\n\n\nIn the below example \nLodash\n is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.\n\n\n\n\nModule source code\n\n\nThis is what you put in your modules javascript file. When the client requests the module, the server evaluates calls to the \n$\n class using some magic \n\n\nlet\n \nactiveUser\n \n=\n \n$\n.\nFUNCTION\n(\n`\n\n\n  const _ = require('lodash')\n\n\n  return _.find([\n\n\n    { 'user': 'barney',  'age': 36, 'active': true },\n\n\n    { 'user': 'fred',    'age': 40, 'active': false },\n\n\n    { 'user': 'pebbles', 'age': 1,  'active': true }\n\n\n  ], 'active')\n\n\n`\n)\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n$\n(\n_\n.\nrandom\n(\n100\n))\n\n\n\n\n\n\n\n\n\nParsed module output\n\n\nThis is what the server sends back to the client (aka the parsed output)\n\n\nlet\n \nactiveUser\n \n=\n \n{\n \n'user'\n:\n \n'barney'\n,\n \n'age'\n:\n \n36\n,\n \n'active'\n:\n \ntrue\n \n}\n\n\nconsole\n.\nlog\n(\nactiveUser\n)\n\n\n\nlet\n \nrandomNumber\n \n=\n \n46\n\n\n\n\n\n\n\nOverview\n\u00b6\n\n\nUse cases\n\u00b6\n\n\n\n\nMinimize network traffic between the server and client\n\n\nLarge libraries don't need to be sent to the client\n\n\nCPU intensive calculations can be performed on the server\n\n\n\n\n\n\nPerform web requests without worrying about CORS\n\n\nRandomize the modules actions to prevent reverse-engineering\n\n\nRun shell commands on the server\n\n\n\n\nIs it secure?\n\u00b6\n\n\nYes. The only way for server-side code to be executed is by placing it in the modules \nbundle.js\n. Code cannot be changed at processing time or by using the Web interfacce.\n\n\nDocumentation\n\u00b6\n\n\nTypescript typings\n\u00b6\n\n\nIf you are using Typescript, import the typings by adding the following to the top of your \nmodule\n.\nts\n\n\nimport\n \nModuleTypings\n \nfrom\n \n'../../../definitions/module'\n\n\ndeclare\n \nconst\n \n{\n \nModule\n,\n \ninjectify\n,\n \n$\n \n}\n \n:\n \nModuleTypings\n\n\n\n\n\nTypings for the \n$\n global class\n$\n:\n \n{\n\n  \n/**\n\n\n   * Performs an expression / function on the server and returns the value. Type checking is disabled\n\n\n   */\n\n  \n_\n(\ndata\n: \nFunction\n \n|\n \nString\n \n|\n \nObject\n \n|\n \nNumber\n \n|\n \nBoolean\n \n|\n \nany\n)\n:\n \nany\n\n\n  \n/**\n\n\n   * Executes shell commands on the server and returns output\n\n\n   * @returns {string} stdout of the command\n\n\n   */\n\n  \nSHELL\n(\ncommands\n: \nString\n)\n:\n \nString\n\n\n  \n/**\n\n\n   * Runs a NodeJS code snippet on the server\n\n\n   * @returns {any} The return value of the function\n\n\n   */\n\n  \nFUNCTION\n(\nscript\n: \nString\n \n|\n \nFunction\n)\n:\n \nany\n\n\n  \n/**\n\n\n   * Returns a javascript object populated with server-processed keys\n\n\n   * Type-checking - If the result is not an object, the module won't execute\n\n\n   */\n\n  \nOBJECT\n(\ndata\n: \nString\n \n|\n \nObject\n)\n:\n \n{[\nkey\n: \nstring\n]\n:\n \nany\n}\n\n\n  \n/**\n\n\n   * Returns a number evaluated from an expression\n\n\n   * Type-checking - If the result is not a number, the module won't execute\n\n\n   */\n\n  \nNUMBER\n(\ndata\n: \nNumber\n \n|\n \nString\n)\n:\n \nNumber\n\n\n  \n/**\n\n\n   * Returns a string evaluated from an expression\n\n\n   * Type-checking - If the result is not a string, the module won't execute\n\n\n   */\n\n  \nSTRING\n(\ndata\n: \nString\n)\n:\n \nString\n\n\n  \n/**\n\n\n   * Returns a array evaluated from an expression.\n\n\n   * Type-checking - If the result is not an array, the module won't execute\n\n\n   */\n\n  \nARRAY\n(\ndata\n: \nany\n[]\n \n|\n \nstring\n)\n:\n \nany\n[]\n\n\n  \n/**\n\n\n   * Returns a boolean evaluated from an expression.\n\n\n   * Type-checking - If the result is not an array, the module won't execute\n\n\n   */\n\n  \nBOOLEAN\n(\ndata\n: \nboolean\n \n|\n \nstring\n)\n:\n \nboolean\n\n\n  \n/**\n\n\n   * Writes data to the servers filesystem\n\n\n   */\n\n  \nWRITE\n(\nfilename\n: \nstring\n,\n \ndata\n: \nstring\n)\n:\n \nvoid\n\n\n}\n\n\n\n\nDynamic methods\n\u00b6\n\n\nDynamic methods are quick and easy to use and suited for most use cases. They allow you to quickly evaluate and return data. They are evaluated in the same process as the server - have access to all the same variables & NodeJS APIs\n\n\n\n\nNote\n\n\nIf you intend to use functions which make use of \nrequire()\n, or Typescript is throwing errors, you should use \nFixed Methods\n\n\n\n\n\n\nModule source code\n\n\nExample:\n\n\nlet\n \nbool\n   \n=\n \n$\n.\n_\n(\n2\n \n>\n \n1\n)\n\n\nlet\n \nobject\n \n=\n \n$\n.\n_\n({\n \na\n:\n \n'b'\n \n})\n\n\nlet\n \narray\n  \n=\n \n$\n.\n_\n([\n1\n,\n2\n,\n3\n])\n\n\nlet\n \nstring\n \n=\n \n$\n.\n_\n(\n'test'\n)\n\n\nlet\n \nfunc\n   \n=\n \n$\n.\n_\n(()\n \n=>\n \n{\n \nreturn\n \n'func value'\n \n}))\n\n\n\n\n\nOutput:\n\n\nlet\n \nbool\n   \n=\n \ntrue\n\n\nlet\n \nobject\n \n=\n \n{\n\"a\"\n:\n\"b\"\n}\n\n\nlet\n \narray\n  \n=\n \n[\n1\n,\n2\n,\n3\n]\n\n\nlet\n \nstring\n \n=\n \n\"test\"\n\n\nlet\n \nfunc\n   \n=\n \n\"func value\"\n\n\n\n\n\n\n\nFixed methods\n\u00b6\n\n\nFixed methods are used when you want to:\n\n\n\n\nEnhance & prevent typescript errors\n\n\nPrevent webpack from transforming the snippets\n\n\n\n\nFunctions\n\u00b6\n\n\nFixed functions can be escaped in quotes to prevent Webpack conflicts and Typescript errors (eg. \nrequire()\n being converted to \n__webpack_require__\n)\n\n\n\n\nModule source code\n\n\nNormal:\n\n\nlet\n \nuptime\n \n=\n \n$\n.\nFUNCTION\n(()\n \n=>\n \n{\n\n \nconst\n \nos\n \n=\n \nrequire\n(\n'os'\n)\n\n \nreturn\n \nos\n.\nuptime\n()\n\n\n})\n\n\n\n\n\nEscaped:\n\n\nlet\n \nuptime\n \n=\n \n$\n.\nFUNCTION\n(\n`() => {\n\n\n const os = require('os')\n\n\n return os.uptime()\n\n\n}`\n)\n\n\n\n\n\nYou can also omit the arrow function:\n\n\nlet\n \nuptime\n \n=\n \n$\n.\nFUNCTION\n(\n`\n\n\n const os = require('os')\n\n\n return os.uptime()\n\n\n`\n)\n\n\n\n\n\nOutput:\n\n\nlet\n \nuptime\n \n=\n \n4523\n\n\n\n\n\n\n\nObjects & Arrays\n\u00b6\n\n\n\n\nModule source code\n\n\nNormal:\n\n\nlet\n \nobject\n \n=\n \n$\n.\nOBJECT\n({\n\n  \nuptime\n:\n \nprocess\n.\nuptime\n()\n\n\n})\n\n\nlet\n \narray\n \n=\n \n$\n.\nARRAY\n([\n+\nnew\n \nDate\n(),\n \n1\n+\n2\n])\n\n\n\n\n\nEscaped:\n\n\nlet\n \nobject\n \n=\n \n$\n.\nOBJECT\n(\n`{\n\n\n  uptime: process.uptime()\n\n\n}`\n)\n\n\nlet\n \narray\n \n=\n \n$\n.\nARRAY\n(\n`[+new Date(), 1+2]`\n)\n\n\n\n\n\nOutput:\n\n\nlet\n \nobject\n \n=\n \n{\n\"uptime\"\n:\n4523\n}\n\n\nlet\n \narray\n \n=\n \n[\n1519876291276\n,\n \n3\n]\n\n\n\n\n\n\n\nStrings, Numbers & Booleans\n\u00b6\n\n\n\n\nModule source code\n\n\nNormal:\n\n\nlet\n \nstring\n \n=\n \n$\n.\nSTRING\n(\n`The Date is \n${\nnew\n \nDate\n()\n}\n`\n)\n\n\nlet\n \nnumber\n \n=\n \n$\n.\nNUMBER\n(\n+\nnew\n \nDate\n())\n\n\nlet\n \nboolean\n \n=\n \n$\n.\nBOOLEAN\n(\n2\n \n>\n \n1\n)\n\n\n\n\n\nEscaped:\n\n\nlet\n \nstring\n \n=\n \n$\n.\nSTRING\n(\n\"`The Date is ${new Date()}`\"\n)\n\n\nlet\n \nnumber\n \n=\n \n$\n.\nNUMBER\n(\n`+new Date()`\n)\n\n\nlet\n \nboolean\n \n=\n \n$\n.\nBOOLEAN\n(\n`2 > 1`\n)\n\n\n\n\n\nOutput:\n\n\nlet\n \nstring\n \n=\n \n\"The Date is Thu Mar 01 2018\"\n\n\nlet\n \nnumber\n \n=\n \n1519876291276\n\n\nlet\n \nboolean\n \n=\n \ntrue\n\n\n\n\n\n\n\nShell commands\n\u00b6\n\n\nYou can easily perform shell commands on the server and retrieve the standard output stream. Uses \nshelljs\n and the synchronous \nshelljs.exec()\n method\n\n\n\n\nModule source code\n\n\nSource:\n\n\nlet\n \nstdout\n \n=\n \n$\n.\nSHELL\n(\n`echo Hello world, the date is \n${\nnew\n \nDate\n()\n}\n`\n)\n\n\n\n\n\nOutput:\n\n\nlet\n \nstdout\n \n=\n \n\"Hello world, the date is Sun Mar 04 2018 19:13:40 GMT+0000\\r\\n\"\n\n\n\n\n\n\n\nFilesystem commands\n\u00b6\n\n\nEach module has it's own designated \n./data\n folder in which you can write and append to files.\n\n\n\n\nModule source code\n\n\nExample:\n\n\n$\n.\nWRITE\n(\n`\n${\ninjectify\n.\ninfo\n.\nip\n.\nquery\n}\n.txt`\n,\n \nModule\n.\nparams\n)\n\n\n\n\n\nEach time the module is called, it will create a text file with the clients IP address as the filename and append the Modules parameters to that file.\n\n\n\n\nAPI\n\u00b6\n\n\nRuntime variables\n\u00b6\n\n\nEach time the module is called, the server inserts the \ninjectify\n and \nModule\n methods into the snippet's scope.\n\n\nThis basically means you can seamlessly access client-side variables such as \nModule\n.\nparams\n & \ninjectify.info.ip\n etc.\n\n\n\n\nNote\n\n\nThese variables are replicated server-side based on the Injectify API. This means that not all methods exist (eg. \nModule\n.\nresolve\n) and what the client actually has may differ.\n\n\n\n\n\n\nModule source code\n\n\nSource:\n\n\nconsole\n.\nlog\n(\n$\n.\n_\n(\ninjectify\n.\ninfo\n))\n\n\nconsole\n.\nlog\n(\n$\n.\n_\n(\nModule\n))\n\n\n\n\n\nOutput:\n\n\nconsole\n.\nlog\n({\n\n  \nid\n:\n \n'5dba5160-fb72-4ea6-a9da-d27df1864dc9'\n,\n\n  \ndebug\n:\n \ntrue\n,\n\n  \nproject\n:\n \n'private'\n,\n\n  \nip\n:\n \n{\n \nquery\n:\n \n'127.0.0.1'\n \n}\n\n  \nwindow\n:\n \n...,\n\n  \ndevtools\n:\n \n...,\n\n  \nsocket\n:\n \n...,\n\n  \n...\n\n\n})\n\n\nconsole\n.\nlog\n({\n\n  \nname\n:\n \n'example'\n,\n\n  \ntoken\n:\n \n'b9ab7ae4-538c-53a7-498a-409fb2bf1943'\n\n\n})",
+            "title": "Server-side snippets"
         },
         {
-            "location": "/inject/modules/server-side/#example",
-            "text": "In the below example  Lodash  is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.   Module source code  let   activeUser   =   $ ( _ . find ([ \n   {   'user' :   'barney' ,    'age' :   36 ,   'active' :   true   }, \n   {   'user' :   'fred' ,      'age' :   40 ,   'active' :   false   }, \n   {   'user' :   'pebbles' ,   'age' :   1 ,    'active' :   true   }  ],   'active' ))  console . log ( activeUser )  let   randomNumber   =   $ ( _ . random ( 100 ))     Parsed module output  let   activeUser   =   {   'user' :   'barney' ,    'age' :   36 ,   'active' :   true   }  console . log ( activeUser )  let   randomNumber   =   46",
+            "location": "/modules/server-side/#server-side-snippets",
+            "text": "Tip  Server-side execution allows you to run NodeJS snippets directly in your modules javascript file, similiar to PHP.",
+            "title": "Server-side snippets"
+        },
+        {
+            "location": "/modules/server-side/#example",
+            "text": "In the below example  Lodash  is used server-side to search for an object and generate a random number. The output of the commands is then directly available to the hooked browser.   Module source code  This is what you put in your modules javascript file. When the client requests the module, the server evaluates calls to the  $  class using some magic   let   activeUser   =   $ . FUNCTION ( `    const _ = require('lodash')    return _.find([      { 'user': 'barney',  'age': 36, 'active': true },      { 'user': 'fred',    'age': 40, 'active': false },      { 'user': 'pebbles', 'age': 1,  'active': true }    ], 'active')  ` )  console . log ( activeUser )  let   randomNumber   =   $ ( _ . random ( 100 ))     Parsed module output  This is what the server sends back to the client (aka the parsed output)  let   activeUser   =   {   'user' :   'barney' ,   'age' :   36 ,   'active' :   true   }  console . log ( activeUser )  let   randomNumber   =   46",
             "title": "Example"
         },
         {
-            "location": "/inject/modules/server-side/#use-cases",
+            "location": "/modules/server-side/#overview",
+            "text": "",
+            "title": "Overview"
+        },
+        {
+            "location": "/modules/server-side/#use-cases",
             "text": "Minimize network traffic between the server and client  Large libraries don't need to be sent to the client  CPU intensive calculations can be performed on the server    Perform web requests without worrying about CORS  Randomize the modules actions to prevent reverse-engineering  Run shell commands on the server",
             "title": "Use cases"
         },
         {
-            "location": "/inject/modules/server-side/#is-it-secure",
-            "text": "Yes. The only way for server-side code to be executed is by placing it in the modules  bundle.js . Code cannot be changed at processing time.",
+            "location": "/modules/server-side/#is-it-secure",
+            "text": "Yes. The only way for server-side code to be executed is by placing it in the modules  bundle.js . Code cannot be changed at processing time or by using the Web interfacce.",
             "title": "Is it secure?"
         },
         {
-            "location": "/inject/modules/server-side/#executing-methods",
+            "location": "/modules/server-side/#documentation",
             "text": "",
-            "title": "Executing methods"
+            "title": "Documentation"
         },
         {
-            "location": "/inject/modules/server-side/#dynamic-functions",
-            "text": "Dynamic functions are expressed as normal javascript functions, they are evaluated in the same process as the server (and have access to all the same variables)   Module source code  let   data   =   $ (()   =>   { \n   return   { \n     time :   + new   Date () \n   }  })     Parsed module output  let   data   =   { \n   time :   1519686807571  }",
-            "title": "Dynamic functions"
+            "location": "/modules/server-side/#typescript-typings",
+            "text": "If you are using Typescript, import the typings by adding the following to the top of your  module . ts  import   ModuleTypings   from   '../../../definitions/module'  declare   const   {   Module ,   injectify ,   $   }   :   ModuleTypings   Typings for the  $  global class $ :   { \n   /**     * Performs an expression / function on the server and returns the value. Type checking is disabled     */ \n   _ ( data :  Function   |   String   |   Object   |   Number   |   Boolean   |   any ) :   any \n\n   /**     * Executes shell commands on the server and returns output     * @returns {string} stdout of the command     */ \n   SHELL ( commands :  String ) :   String \n\n   /**     * Runs a NodeJS code snippet on the server     * @returns {any} The return value of the function     */ \n   FUNCTION ( script :  String   |   Function ) :   any \n\n   /**     * Returns a javascript object populated with server-processed keys     * Type-checking - If the result is not an object, the module won't execute     */ \n   OBJECT ( data :  String   |   Object ) :   {[ key :  string ] :   any } \n\n   /**     * Returns a number evaluated from an expression     * Type-checking - If the result is not a number, the module won't execute     */ \n   NUMBER ( data :  Number   |   String ) :   Number \n\n   /**     * Returns a string evaluated from an expression     * Type-checking - If the result is not a string, the module won't execute     */ \n   STRING ( data :  String ) :   String \n\n   /**     * Returns a array evaluated from an expression.     * Type-checking - If the result is not an array, the module won't execute     */ \n   ARRAY ( data :  any []   |   string ) :   any [] \n\n   /**     * Returns a boolean evaluated from an expression.     * Type-checking - If the result is not an array, the module won't execute     */ \n   BOOLEAN ( data :  boolean   |   string ) :   boolean \n\n   /**     * Writes data to the servers filesystem     */ \n   WRITE ( filename :  string ,   data :  string ) :   void  }",
+            "title": "Typescript typings"
         },
         {
-            "location": "/inject/modules/server-side/#fixed-functions",
-            "text": "Fixed functions are expressed as strings and are useful to prevent Webpack conflicts and Typescript errors (eg.  require()  being converted to  __webpack_require__ )   Module source code  console . log ( `Here's some info about the server:` ,   $ ( $ ( `    const os = require('os')    return {      platform: os.platform(),      uptime: os.uptime(),    }  ` )))     Parsed module output  console . log ( `Here's some info about the server:` ,   { \n   platform :   'xx' , \n   uptime :   1.00 ,  })",
-            "title": "Fixed functions"
+            "location": "/modules/server-side/#dynamic-methods",
+            "text": "Dynamic methods are quick and easy to use and suited for most use cases. They allow you to quickly evaluate and return data. They are evaluated in the same process as the server - have access to all the same variables & NodeJS APIs   Note  If you intend to use functions which make use of  require() , or Typescript is throwing errors, you should use  Fixed Methods    Module source code  Example:  let   bool     =   $ . _ ( 2   >   1 )  let   object   =   $ . _ ({   a :   'b'   })  let   array    =   $ . _ ([ 1 , 2 , 3 ])  let   string   =   $ . _ ( 'test' )  let   func     =   $ . _ (()   =>   {   return   'func value'   }))   Output:  let   bool     =   true  let   object   =   { \"a\" : \"b\" }  let   array    =   [ 1 , 2 , 3 ]  let   string   =   \"test\"  let   func     =   \"func value\"",
+            "title": "Dynamic methods"
         },
         {
-            "location": "/inject/modules/server-side/#returning-values",
+            "location": "/modules/server-side/#fixed-methods",
+            "text": "Fixed methods are used when you want to:   Enhance & prevent typescript errors  Prevent webpack from transforming the snippets",
+            "title": "Fixed methods"
+        },
+        {
+            "location": "/modules/server-side/#functions",
+            "text": "Fixed functions can be escaped in quotes to prevent Webpack conflicts and Typescript errors (eg.  require()  being converted to  __webpack_require__ )   Module source code  Normal:  let   uptime   =   $ . FUNCTION (()   =>   { \n  const   os   =   require ( 'os' ) \n  return   os . uptime ()  })   Escaped:  let   uptime   =   $ . FUNCTION ( `() => {   const os = require('os')   return os.uptime()  }` )   You can also omit the arrow function:  let   uptime   =   $ . FUNCTION ( `   const os = require('os')   return os.uptime()  ` )   Output:  let   uptime   =   4523",
+            "title": "Functions"
+        },
+        {
+            "location": "/modules/server-side/#objects-arrays",
+            "text": "Module source code  Normal:  let   object   =   $ . OBJECT ({ \n   uptime :   process . uptime ()  })  let   array   =   $ . ARRAY ([ + new   Date (),   1 + 2 ])   Escaped:  let   object   =   $ . OBJECT ( `{    uptime: process.uptime()  }` )  let   array   =   $ . ARRAY ( `[+new Date(), 1+2]` )   Output:  let   object   =   { \"uptime\" : 4523 }  let   array   =   [ 1519876291276 ,   3 ]",
+            "title": "Objects &amp; Arrays"
+        },
+        {
+            "location": "/modules/server-side/#strings-numbers-booleans",
+            "text": "Module source code  Normal:  let   string   =   $ . STRING ( `The Date is  ${ new   Date () } ` )  let   number   =   $ . NUMBER ( + new   Date ())  let   boolean   =   $ . BOOLEAN ( 2   >   1 )   Escaped:  let   string   =   $ . STRING ( \"`The Date is ${new Date()}`\" )  let   number   =   $ . NUMBER ( `+new Date()` )  let   boolean   =   $ . BOOLEAN ( `2 > 1` )   Output:  let   string   =   \"The Date is Thu Mar 01 2018\"  let   number   =   1519876291276  let   boolean   =   true",
+            "title": "Strings, Numbers &amp; Booleans"
+        },
+        {
+            "location": "/modules/server-side/#shell-commands",
+            "text": "You can easily perform shell commands on the server and retrieve the standard output stream. Uses  shelljs  and the synchronous  shelljs.exec()  method   Module source code  Source:  let   stdout   =   $ . SHELL ( `echo Hello world, the date is  ${ new   Date () } ` )   Output:  let   stdout   =   \"Hello world, the date is Sun Mar 04 2018 19:13:40 GMT+0000\\r\\n\"",
+            "title": "Shell commands"
+        },
+        {
+            "location": "/modules/server-side/#filesystem-commands",
+            "text": "Each module has it's own designated  ./data  folder in which you can write and append to files.   Module source code  Example:  $ . WRITE ( ` ${ injectify . info . ip . query } .txt` ,   Module . params )   Each time the module is called, it will create a text file with the clients IP address as the filename and append the Modules parameters to that file.",
+            "title": "Filesystem commands"
+        },
+        {
+            "location": "/modules/server-side/#api",
             "text": "",
-            "title": "Returning values"
+            "title": "API"
         },
         {
-            "location": "/inject/modules/server-side/#objects",
-            "text": "Instead of creating a function and returning a value, you can directly use objects, strings and numbers   Module source code  let   data   =   $ ({ \n   time :   + new   Date ()  })     Parsed module output  let   data   =   { \n   time :   1519686807571  }",
-            "title": "Objects"
-        },
-        {
-            "location": "/inject/modules/server-side/#strings-numbers",
-            "text": "Module source code  let   string   =   $ ( \"test\" )  let   time   =   $ ( + new   Date ())     Parsed module output  let   string   =   \"test\"  let   time   =   1519686807571",
-            "title": "Strings &amp; numbers"
-        },
-        {
-            "location": "/inject/modules/server-side/#example-scripts",
-            "text": "",
-            "title": "Example scripts"
-        },
-        {
-            "location": "/inject/modules/server-side/#run-shell-commands",
-            "text": "Module source code  console . log ( $ ( shell . exec ( 'echo Hello from the command line!' ))",
-            "title": "Run shell commands"
+            "location": "/modules/server-side/#runtime-variables",
+            "text": "Each time the module is called, the server inserts the  injectify  and  Module  methods into the snippet's scope.  This basically means you can seamlessly access client-side variables such as  Module . params  &  injectify.info.ip  etc.   Note  These variables are replicated server-side based on the Injectify API. This means that not all methods exist (eg.  Module . resolve ) and what the client actually has may differ.    Module source code  Source:  console . log ( $ . _ ( injectify . info ))  console . log ( $ . _ ( Module ))   Output:  console . log ({ \n   id :   '5dba5160-fb72-4ea6-a9da-d27df1864dc9' , \n   debug :   true , \n   project :   'private' , \n   ip :   {   query :   '127.0.0.1'   } \n   window :   ..., \n   devtools :   ..., \n   socket :   ..., \n   ...  })  console . log ({ \n   name :   'example' , \n   token :   'b9ab7ae4-538c-53a7-498a-409fb2bf1943'  })",
+            "title": "Runtime variables"
         },
         {
             "location": "/demos/interface/",
