@@ -35,10 +35,8 @@ pages:
         - Managing domain filters: 'usage/project-config/filters.md'
         - Project API: 'usage/project-config/api.md'
   - Usage:
-    - Generating JS payloads: 'usage/payload-generator.md'
-    - Hooking browsers: 'usage/inject.md'
-    - Password extractor: 'usage/passwords.md'
-    - Keylogger: 'usage/keylogger.md'
+    - Console: 'usage/console.md'
+    - Data storage: 'usage/data.md'
     - Project configuration:
       - Managing users & roles: 'usage/project-config/roles.md'
       - Managing domain filters: 'usage/project-config/filters.md'

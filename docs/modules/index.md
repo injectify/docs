@@ -28,7 +28,7 @@ All modules are preprocessed by [webpack](https://webpack.js.org/) into a single
 
 ### Typescript (Optional)
 
-You can use Typescript to write next generation ecmascript and have it compile to older-browser compatible javascript. All the necessary typings have been created & documented for you, so you can fully utilize the Injectify API
+You can use Typescript to write next generation ES7 and have it compile to older-browser compatible javascript. All the necessary typings have been created & documented for you, so you can fully utilize the Injectify API
 
 ???+ info "VS Code intellisense"
 

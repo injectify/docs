@@ -38,10 +38,12 @@
 
 # Introduction
 
-Injectify is a web based MiTM tool, similiar to [BeEF](http://beefproject.com/) (although completely unrelated in terms of source code).
+Injectify is a web based MiTM tool, similiar to [BeEF](http://beefproject.com/) (although completely unrelated in terms of source code). It uses modern web technologies such as ReactJS, Redux, Typescript and Webpack.
 
 ## What can it do?
 
-* :zap: Create a reverse Javascript shell between the victim and the attacker.
-* :keyboard: Records keystrokes and logs them to a database.
-* :closed_lock_with_key: Extract and log [saved passwords](https://twitter.com/thesamdd/status/947251299262836741) from the browser.
+* :zap: **Create a reverse Javascript shell between the victim and the attacker.**
+* :ghost: **PageGhost - see what's on the victims screen and interact with it in realtime**
+* :wrench: Highly integrated Module platform, with a high-level API
+* :bookmark_tabs: Data extraction API - record custom data
+    * :closed_lock_with_key: Extracts and logs saved passwords from the browser.

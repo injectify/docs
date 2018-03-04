@@ -50,7 +50,7 @@ In the below example [Lodash](https://lodash.com) is used server-side to search 
 
 ### Is it secure?
 
-Yes. The only way for server-side code to be executed is by placing it in the modules `bundle.js`. Code cannot be changed at processing time.
+Yes. The only way for server-side code to be executed is by placing it in the modules `bundle.js`. Code cannot be changed at processing time or by using the Web interfacce.
 
 ## Documentation
 
@@ -125,7 +125,7 @@ declare const { Module, injectify, $ } : ModuleTypings
 Dynamic methods are quick and easy to use and suited for most use cases. They allow you to quickly evaluate and return data. They are evaluated in the same process as the server - have access to all the same variables & NodeJS APIs
 
 !!! note
-    If you intend to use functions which make use of `require()`, or Typescript is throwing errors, you should use [Fixed Types](#fixed-types)
+    If you intend to use functions which make use of `require()`, or Typescript is throwing errors, you should use [Fixed Methods](#fixed-methods)
 
 !!! example "Module source code"
 
@@ -151,7 +151,7 @@ Dynamic methods are quick and easy to use and suited for most use cases. They al
 
 ### Fixed methods
 
-Fixed types are used when you want to:
+Fixed methods are used when you want to:
 
 - Enhance & prevent typescript errors
 - Prevent webpack from transforming the snippets
