@@ -38,7 +38,7 @@ You can use Typescript to write next generation ES7 and have it compile to older
 
 ### Developer-first experience
 
-Injectify was built to be super easy to customize hence the reason to use NodeJS (instead of a higher-level langauge such as Python, Elixir or Java).
+Injectify was built to be super easy to customize hence the reason to use NodeJS (instead of a lower-level langauge such as Java or C++).
 
 The developer experience whilst developing modules is performant and easy to debug, all the below features are available when the client connects via debug mode
 

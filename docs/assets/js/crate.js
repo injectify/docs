@@ -27,10 +27,15 @@ if (!params.has('embedded')) {
 /**
  * Analytics
  */
-var sc_project=11546194
-var sc_invisible=1
-var sc_security="b588ced0"
-var sc_https=1
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' async src='" + scJsHost + "statcounter.com/counter/counter_xhtml.js'></"+"script>")
+var _paq = _paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(["setCookieDomain", "*.injectify.samdd.me"]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="//analytics.samdd.me/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', '2']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
