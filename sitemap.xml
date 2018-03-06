@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -29,13 +29,13 @@
         
     <url>
      <loc>/usage/console/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/usage/data/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -51,25 +51,25 @@
         
     <url>
      <loc>/modules/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/modules/create/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/modules/api/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/modules/server-side/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,7 +79,7 @@
         
     <url>
      <loc>/demos/interface/</loc>
-     <lastmod>2018-03-04</lastmod>
+     <lastmod>2018-03-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
